@@ -1,0 +1,4 @@
+for folder in $(ls -l | grep "*/")
+do
+	echo $folder
+done
