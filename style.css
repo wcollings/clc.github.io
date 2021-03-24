@@ -1,0 +1,33 @@
+h1 {
+	color:red;
+}
+body{
+	background-color:#AAD8F9;
+	font-family: Serif
+}
+
+body:active + body:visited{
+	color:#800080
+}
+
+Body:link{
+	color: #000080
+}
+
+#head_t {
+	width: 90%;
+	border: 3px solid #000080;
+	padding: 10px 10px;
+}
+
+#lyrics {
+	padding: 10px 10px;
+	width: 90%;
+	text-align: center;
+}
+
+#lc{
+	vertical-align: top;
+	text-align: center;
+	width: 20%;
+}
