@@ -1,6 +1,8 @@
 from bs4 import BeautifulSoup as bs
 import os
 import globals as g
+import json
+from functools import reduce
 
 class htmldoc:
 	def __init__(self, file):
@@ -136,7 +138,7 @@ class htmldoc:
 					continue
 				new_path=g.find_path(link["href"],album)
 				if new_path==-1:
-					g.links_f.write("{} in file {}\n".format(link["href"], self.originalFile))
+					g.links_f.write('"{}" in file "{}"\n'.format(link["href"], self.originalFile))
 				else:
 					link["href"]=g.find_path(link["href"], album)
 				#g.links_f.write('"{}"->"{}"'.format(link["href"],g.find_path(link["href"], album)))
@@ -152,6 +154,31 @@ class htmldoc:
 			for link in links[2:]:
 				if "../" not in link["href"]:
 					link["href"]=self.update_album(link["href"])
+		elif self.ftype=="songlist":
+			self.update_root()
+
+	def update_root(self):
+		for row in self.soup.body.find_all("tr"):
+			cols=row.find_all("td")
+			if not cols[0].find("a"):
+				continue
+			
+			#the first link is the song
+			#	update the song link, but strip off the "../.../" as that will fuck things up
+			new_path=g.find_path(cols[0].a["href"])
+			new_path=g.splitall(new_path)
+			cols[0].a["href"]=reduce(os.path.join,new_path[2:])
+			test=False
+			#the second link is the artist -- it doesn't need to be updated
+			#the third link is the album -- if it's a compilation it doesn't need updating
+			if not "compilation" in cols[2].a["href"]:
+				new_path=g.splitall(g.find_path(cols[2].a["href"]))
+				new_path[1]="."
+				cols[2].a["href"]=reduce(os.path.join, new_path[2:])
+			for link in cols[3].a:
+				new_path=g.splitall(g.find_path(link["href"]))
+				link["href"]=reduce(os.path.join,new_path[2:])
+
 
 	def update_album(self,an):
 		dir,fn=os.path.split(an)
@@ -198,3 +225,36 @@ class htmldoc:
 
 
 failed_files=[]
+if __name__=="__main__":
+	g.failed_files=[]
+	files=[
+		"songlist-a.html",
+		"songlist-a_1.html",
+		"songlist-b.html",
+		"songlist-c.html",
+		"songlist-d.html",
+		"songlist-e.html",
+		"songlist-f.html",
+		"songlist-g.html",
+		"songlist-h.html",
+		"songlist-i.html",
+		"songlist-j.html",
+		"songlist-l.html",
+		"songlist-m.html",
+		"songlist-n.html",
+		"songlist-o.html",
+		"songlist-p.html",
+		"songlist-qr.html",
+		"songlist-s.html",
+		"songlist-t.html",
+		"songlist-uv.html",
+		"songlist-w.html",
+		"songlist-y.html",
+		"songlist.html"]
+	g.all_files=json.load(open("dir_struct.json",'r'))
+	for file in files:
+		h=htmldoc(file)
+		h.ftype="songlist"
+		h.update_links()
+		h.write()
+		print(g.failed_files)
