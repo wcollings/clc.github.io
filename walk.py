@@ -55,16 +55,16 @@ for root,dirs,files in os.walk("."):
 		#"index.html" is always an artist
 		if "index" in name:
 			cf.ftype="artist"
-			#cf.clean()
+			cf.clean()
 			cf.insert_css("../style.css")
 		#the album file is under the same name as its folder, so it's ".../album/album.html"
 		elif temp[2] in name:
 			cf.ftype="album"
-			#cf.clean()
+			cf.clean()
 			cf.insert_css("../../style.css")
 		else:
 			cf.ftype="song"
-			#cf.clean()
+			cf.clean()
 			cf.insert_css("../../style.css")
 		#cf.update_links()
 		cf.write()

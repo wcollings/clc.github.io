@@ -5,16 +5,21 @@ import json
 from functools import reduce
 
 class htmldoc:
-	def __init__(self, file):
+	def __init__(self, file, format=None):
 		self.originalFile=file
-		self.bad=False
+		self.skip=False
+		if format is None:
+			format="ISO-8859-1"
 		try:
-			self.soup=bs(open(file,'r', encoding="ISO-8859-1"),'html.parser')
+			self.soup=bs(open(file,'r', encoding=format),'html.parser')
+			cleaned=self.soup.find("cleaned")
+			if cleaned is not None:
+				self.skip=True
 			self.title=self.soup.title
 			if "404" in self.title.string:
-				self.bad=True
+				self.skip=True
 		except:
-			self.bad=True
+			self.skip=True
 			g.failed_files.append(file)
 			return
 
@@ -29,7 +34,7 @@ class htmldoc:
 			Cleans the lyrics table
 			Cleans the nested "table-row-col-table-row-col-table-row-col-center" bullshit
 		"""
-		if self.bad:
+		if self.skip:
 			return
 		#Fix the body tag
 		b=self.soup.body
@@ -123,7 +128,7 @@ class htmldoc:
 					elem.extract()
 
 	def update_links(self):
-		if self.bad:
+		if self.skip:
 			return
 		split_path=g.splitall(self.originalFile)
 		path_home="../"*(len(split_path)-1)
@@ -189,7 +194,7 @@ class htmldoc:
 		dir,fn=os.path.split(an)
 		return "{}/{}".format(fn[:fn.find(".html")],fn)
 	def insert_css(self, link):
-		if self.bad:
+		if self.skip:
 			return
 		if self.soup.head.find("link"):
 			self.soup.head.link["href"]=link
@@ -211,8 +216,10 @@ class htmldoc:
 		pass
 
 	def write(self,file=None):
-		if self.bad:
+		if self.skip:
 			return
+		cleaned=self.soup.new_tag("cleaned")
+		self.soup.body.append(cleaned)
 		try:
 			if file != None:
 				fp=open(file,'w')
