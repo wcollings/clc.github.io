@@ -1,11 +1,9 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
- <head>
-  <title>
-   IIS 8.5 Detailed Error - 404.0 - Not Found
-  </title>
-  <style type="text/css">
-   <!-- 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<title>IIS 8.5 Detailed Error - 404.0 - Not Found</title> 
+<style type="text/css"> 
+<!-- 
 body{margin:0;font-size:.7em;font-family:Verdana,Arial,Helvetica,sans-serif;} 
 code{margin:0;color:#006600;font-size:1.1em;font-weight:bold;} 
 .config_source code{font-size:.8em;color:#000000;} 
@@ -43,153 +41,58 @@ table tr.alt td,table tr.alt th{}
 .highlight-code{color:#CC0000;font-weight:bold;font-style:italic;} 
 .clear{clear:both;} 
 .preferred{padding:0 5px 2px 5px;font-weight:normal;background:#006633;color:#FFF;font-size:.8em;} 
--->
-  </style>
- </head>
- <body>
-  <div id="content">
-   <div class="content-container">
-    <h3>
-     HTTP Error 404.0 - Not Found
-    </h3>
-    <h4>
-     The resource you are looking for has been removed, had its name changed, or is temporarily unavailable.
-    </h4>
-   </div>
-   <div class="content-container">
-    <fieldset>
-     <h4>
-      Most likely causes:
-     </h4>
-     <ul>
-      <li>
-       The directory or file specified does not exist on the Web server.
-      </li>
-      <li>
-       The URL contains a typographical error.
-      </li>
-      <li>
-       A custom filter or module, such as URLScan, restricts access to the file.
-      </li>
-     </ul>
-    </fieldset>
-   </div>
-   <div class="content-container">
-    <fieldset>
-     <h4>
-      Things you can try:
-     </h4>
-     <ul>
-      <li>
-       Create the content on the Web server.
-      </li>
-      <li>
-       Review the browser URL.
-      </li>
-      <li>
-       Create a tracing rule to track failed requests for this HTTP status code and see which module is calling SetStatus. For more information about creating a tracing rule for failed requests, click
-       <a href="http://go.microsoft.com/fwlink/?LinkID=66439">
-        here
-       </a>
-       .
-      </li>
-     </ul>
-    </fieldset>
-   </div>
-   <div class="content-container">
-    <fieldset>
-     <h4>
-      Detailed Error Information:
-     </h4>
-     <div id="details-left">
-      <table border="0" cellpadding="0" cellspacing="0">
-       <tr class="alt">
-        <th>
-         Module
-        </th>
-        <td>
-         IIS Web Core
-        </td>
-       </tr>
-       <tr>
-        <th>
-         Notification
-        </th>
-        <td>
-         MapRequestHandler
-        </td>
-       </tr>
-       <tr class="alt">
-        <th>
-         Handler
-        </th>
-        <td>
-         StaticFile
-        </td>
-       </tr>
-       <tr>
-        <th>
-         Error Code
-        </th>
-        <td>
-         0x80070002
-        </td>
-       </tr>
-      </table>
-     </div>
-     <div id="details-right">
-      <table border="0" cellpadding="0" cellspacing="0">
-       <tr class="alt">
-        <th>
-         Requested URL
-        </th>
-        <td>
-         http://www.celticlyricscorner.net:80/compilations/.htm
-        </td>
-       </tr>
-       <tr>
-        <th>
-         Physical Path
-        </th>
-        <td>
-         G:\PleskVhosts\celticlyricscorner.net\httpdocs\compilations\.htm
-        </td>
-       </tr>
-       <tr class="alt">
-        <th>
-         Logon Method
-        </th>
-        <td>
-         Anonymous
-        </td>
-       </tr>
-       <tr>
-        <th>
-         Logon User
-        </th>
-        <td>
-         Anonymous
-        </td>
-       </tr>
-      </table>
-      <div class="clear">
-      </div>
-     </div>
-    </fieldset>
-   </div>
-   <div class="content-container">
-    <fieldset>
-     <h4>
-      More Information:
-     </h4>
-     This error means that the file or directory does not exist on the server. Create the file or directory and try the request again.
-     <p>
-      <a href="http://go.microsoft.com/fwlink/?LinkID=62293&amp;IIS70Error=404,0,0x80070002,9600">
-       View more information »
-      </a>
-     </p>
-    </fieldset>
-   </div>
-  </div>
- </body>
-</html>
+--> 
+</style> 
+ 
+</head> 
+<body> 
+<div id="content"> 
+<div class="content-container"> 
+  <h3>HTTP Error 404.0 - Not Found</h3> 
+  <h4>The resource you are looking for has been removed, had its name changed, or is temporarily unavailable.</h4> 
+</div> 
+<div class="content-container"> 
+ <fieldset><h4>Most likely causes:</h4> 
+  <ul> 	<li>The directory or file specified does not exist on the Web server.</li> 	<li>The URL contains a typographical error.</li> 	<li>A custom filter or module, such as URLScan, restricts access to the file.</li> </ul> 
+ </fieldset> 
+</div> 
+<div class="content-container"> 
+ <fieldset><h4>Things you can try:</h4> 
+  <ul> 	<li>Create the content on the Web server.</li> 	<li>Review the browser URL.</li> 	<li>Create a tracing rule to track failed requests for this HTTP status code and see which module is calling SetStatus. For more information about creating a tracing rule for failed requests, click <a href="http://go.microsoft.com/fwlink/?LinkID=66439">here</a>. </li> </ul> 
+ </fieldset> 
+</div> 
+ 
+<div class="content-container"> 
+ <fieldset><h4>Detailed Error Information:</h4> 
+  <div id="details-left"> 
+   <table border="0" cellpadding="0" cellspacing="0"> 
+    <tr class="alt"><th>Module</th><td>&nbsp;&nbsp;&nbsp;IIS Web Core</td></tr> 
+    <tr><th>Notification</th><td>&nbsp;&nbsp;&nbsp;MapRequestHandler</td></tr> 
+    <tr class="alt"><th>Handler</th><td>&nbsp;&nbsp;&nbsp;StaticFile</td></tr> 
+    <tr><th>Error Code</th><td>&nbsp;&nbsp;&nbsp;0x80070002</td></tr> 
+     
+   </table> 
+  </div> 
+  <div id="details-right"> 
+   <table border="0" cellpadding="0" cellspacing="0"> 
+    <tr class="alt"><th>Requested URL</th><td>&nbsp;&nbsp;&nbsp;http://www.celticlyricscorner.net:80/compilations/.htm</td></tr> 
+    <tr><th>Physical Path</th><td>&nbsp;&nbsp;&nbsp;G:\PleskVhosts\celticlyricscorner.net\httpdocs\compilations\.htm</td></tr> 
+    <tr class="alt"><th>Logon Method</th><td>&nbsp;&nbsp;&nbsp;Anonymous</td></tr> 
+    <tr><th>Logon User</th><td>&nbsp;&nbsp;&nbsp;Anonymous</td></tr> 
+     
+   </table> 
+   <div class="clear"></div> 
+  </div> 
+ </fieldset> 
+</div> 
+ 
+<div class="content-container"> 
+ <fieldset><h4>More Information:</h4> 
+  This error means that the file or directory does not exist on the server. Create the file or directory and try the request again. 
+  <p><a href="http://go.microsoft.com/fwlink/?LinkID=62293&amp;IIS70Error=404,0,0x80070002,9600">View more information &raquo;</a></p> 
+   
+ </fieldset> 
+</div> 
+</div> 
+</body> 
+</html> 

@@ -125,11 +125,14 @@ class htmldoc:
 	def update_links(self):
 		if self.bad:
 			return
-		self.update=[]
+		split_path=g.splitall(self.originalFile)
+		path_home="../"*(len(split_path)-1)
 		links=self.soup.find_all("a")
+		links[0]["href"]=path_home+"index.html"
+		if "Artists" in links[1].get_text():
+			links[1]["href"]=path_home+"artists.html"
+
 		if self.ftype == "song":
-			links[0]["href"]="../../index.html"
-			links[1]["href"]="../../artists.html"
 			album=links[3]["href"]
 			album=album[:album.find(".html")]
 			for link in links[5:]:
@@ -140,12 +143,11 @@ class htmldoc:
 				if new_path==-1:
 					g.links_f.write('"{}" in file "{}"\n'.format(link["href"], self.originalFile))
 				else:
-					link["href"]=g.find_path(link["href"], album)
+					temp=g.find_path(link["href"], album)
+					
 				#g.links_f.write('"{}"->"{}"'.format(link["href"],g.find_path(link["href"], album)))
 			#return
 		elif self.ftype == "album":
-			links[0]["href"]="../../index.html"
-			links[1]["href"]="../../artists.html"
 			# If there aren't 3 links, that means it's a compilation or a Puirt. But they do exist, so we need to
 			# handle them
 			if len(links) > 2:
@@ -171,11 +173,14 @@ class htmldoc:
 			test=False
 			#the second link is the artist -- it doesn't need to be updated
 			#the third link is the album -- if it's a compilation it doesn't need updating
-			if not "compilation" in cols[2].a["href"]:
-				new_path=g.splitall(g.find_path(cols[2].a["href"]))
-				new_path[1]="."
-				cols[2].a["href"]=reduce(os.path.join, new_path[2:])
-			for link in cols[3].a:
+			if cols[2].a is not None:
+				if not "compilation" in cols[2].a["href"]:
+					new_path=g.splitall(g.find_path(cols[2].a["href"]))
+					new_path[1]="."
+					cols[2].a["href"]=reduce(os.path.join, new_path[2:])
+			if len(cols) <4:
+				continue
+			for link in cols[3].find_all("a"):
 				new_path=g.splitall(g.find_path(link["href"]))
 				link["href"]=reduce(os.path.join,new_path[2:])
 
@@ -209,8 +214,8 @@ class htmldoc:
 		if self.bad:
 			return
 		try:
-			if file==None:
-				fp=open(self.originalFile,'w')
+			if file != None:
+				fp=open(file,'w')
 			else:
 				os.remove(self.originalFile)
 				fp=open(self.originalFile,'w', encoding="UTF-8")
@@ -224,7 +229,6 @@ class htmldoc:
 			print("The encoding happened because of an encoding error: {}".format(ue.encoding))
 
 
-failed_files=[]
 if __name__=="__main__":
 	g.failed_files=[]
 	files=[
@@ -249,12 +253,11 @@ if __name__=="__main__":
 		"songlist-t.html",
 		"songlist-uv.html",
 		"songlist-w.html",
-		"songlist-y.html",
-		"songlist.html"]
+		"songlist-y.html"]
 	g.all_files=json.load(open("dir_struct.json",'r'))
 	for file in files:
 		h=htmldoc(file)
 		h.ftype="songlist"
 		h.update_links()
 		h.write()
-		print(g.failed_files)
+	print(g.failed_files)
