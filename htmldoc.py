@@ -172,7 +172,7 @@ class htmldoc:
 			
 			#the first link is the song
 			#	update the song link, but strip off the "../.../" as that will fuck things up
-			new_path=g.find_path(cols[0].a["href"])
+			new_path=g.find_path(cols[0].a["href"], )
 			new_path=g.splitall(new_path)
 			cols[0].a["href"]=reduce(os.path.join,new_path[2:])
 			test=False
@@ -202,18 +202,6 @@ class htmldoc:
 		new_tag=self.soup.new_tag("link",rel="stylesheet",href=link)
 		self.soup.head.append(new_tag)
 	#Now we're getting into functions to build the page if it doesn't yet exist
-	def build(self):
-		self.set_meta()
-		#For now I'm going to assume the lyrics themselves have already been passed in or read
-		self.build_header()
-		self.soup=bs("<html></html>",'html.parser')
-
-	#Check if there's artist, album, credits, language, etc
-	def set_meta(self):
-		pass
-
-	def build_header(self):
-		pass
 
 	def write(self,file=None):
 		if self.skip:
@@ -224,10 +212,10 @@ class htmldoc:
 			if file != None:
 				fp=open(file,'w')
 			else:
-				os.remove(self.originalFile)
-				fp=open(self.originalFile,'w', encoding="UTF-8")
+				#os.remove(self.originalFile)
+				fp=open(self.originalFile,'w', encoding="latin-1")
 			self.soup.smooth()
-			fp.write(self.soup.prettify())
+			fp.write(self.soup.prettify("latin-1"))
 			fp.close()
 		except FileNotFoundError:
 			print("I couldn't find a file called {}".format(self.originalFile))

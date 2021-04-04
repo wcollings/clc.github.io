@@ -18,7 +18,7 @@ def splitall(path):
 			allparts.insert(0, parts[1])
 	return allparts
 
-def find_path(to_find, album):
+def find_path(to_find, album=None):
 	if to_find.startswith("@@"):
 		return
 	path=splitall(to_find)
