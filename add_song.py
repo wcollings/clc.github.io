@@ -4,13 +4,13 @@ from functools import reduce
 from bs4 import BeautifulSoup as bs
 import re
 import json
+import dirs
 
 
-cwd=os.getcwd()
-files=os.listdir(os.path.join(cwd,"to_process"))
+files=os.listdir("to_process")
 meta={}
 lyrics=[]
-dir_s=json.load(open("dir_struct.json"))
+dir_s=dirs.get_folders()
 doc,tag,text=Doc().tagtext()
 
 def make_html(f):
@@ -30,14 +30,24 @@ def make_html(f):
 	format_lyrics()
 	lyrics="".join(doc.getvalue())
 	lyrics_line=0
-	pos=30
+	pos=31
 	lines.insert(pos,lyrics)
 	print("Writing to file: {}".format(meta["writepath"]))
+	if os.path.exists(meta["writepath"]):
+		temp=input("WARNING: this file already exists. Overwright? (y/n)\n>")
+		if not (temp=="y" or temp=="Y"):
+			return -1
 	f=open(meta["writepath"],'wb')
+
 	soup=bs("".join(lines), 'html.parser')
 	soup.smooth()
 	f.write(soup.prettify("latin-1"))
 	f.close()
+	if not os.path.exists(reduce(os.path.join,[meta["ART_LINK"],meta["ALB_LINK"],meta["ALB_LINK"]+".html"])):
+		print("Please note that there isn't an index file for {} yet, so it would help to make that".format(meta["ALBUM"]))
+	if meta["ART_LINK"] != "." and not os.path.exists(os.path.join(meta["ART_LINK"],"index.html")):
+		print("Plese note that there isn't an index file for {} yet, so it would help to make that".format(meta["ARTIST"]))
+	return 1
 
 	#First, read the header
 	#Then read the rest
@@ -65,21 +75,20 @@ def add_language(line):
 	
 def format_lyrics():
 	char_map={
-		"\`a":"à",
-		"\`e":"è",
-		"\'i":"ì",
-		"\`o":"ò",
-		"\`u":"ù",
-		"\'a":"á",
-		"\'e":"é",
-		"\'i":"í",
-		"\'o":"ó",
-		"\'u":"ú",
-		"\^a":"â",
-		"\^e":"ê",
-		"\^i":"î",
-		"\^o":"ô",
-		"\^u":"û"
+		"\\`a":"à", "\\'a":"á", "\\^a":"â",
+		"\\`A":"À", "\\'A":"Á", "\\^A":"Â",
+
+		"\\`e":"è", "\\'e":"é", "\\^e":"ê",
+		"\\`E":"È", "\\'E":"É", "\\^E":"Ê",
+
+		"\\`i":"ì", "\\'i":"í", "\\^i":"î",
+		"\\`I":"Ì", "\\'I":"Í", "\\^I":"Î",
+
+		"\\`o":"ò", "\\'o":"ó", "\\^o":"ô",
+		"\\`O":"Ò", "\\'O":"Ó", "\\^O":"Ô",
+
+		"\\`u":"ù", "\\'u":"ú", "\\^u":"û",
+		"\\`U":"Ù", "\\'U":"Ú", "\\^U":"Û"
 	}
 	#First we're gonna convert the accent mark characters if they need it
 	#We should only need to check the first column of lyrics.
@@ -202,13 +211,20 @@ def set_paths():
 	if "ALB_LINK" not in meta:
 		if "{" in meta["ALBUM"]:
 			al=meta["ALBUM"]
-			meta["ALB_LINK"]=al[al.find("{"):al.find("}")-1].lower()
+			meta["ALB_LINK"]=al[al.find("{")+1:al.find("}")].lower()
+			meta["ALBUM"]=al.replace("{","").replace("}","")
+		else:
+			meta["ALB_LINK"]=meta["ALBUM"].split(" ")[0].lower()
 	if "ART_LINK" not in meta:
 		if "{" in meta["ARTIST"]:
 			ar=meta["ARTIST"]
-			meta["ART_LINK"]=ar[ar.find("{"):ar.find("}")-1].lower()
+			meta["ART_LINK"]=ar[ar.find("{")+1:ar.find("}")].lower()
+			meta["ARTIST"]=ar.replace("{","").replace("}","")
+		else:
+			meta["ART_LINK"]=meta["ARTIST"].split(" ")[0].lower()
 	if "SONG_LINK" not in meta:
-		meta["SONG_LINK"]=meta["FNAME"]
+		_,s=os.path.split(meta["FNAME"])
+		meta["SONG_LINK"]=s[:-3]+"html"
 
 def parse_doc(f):
 	inf=open(f, encoding="UTF-8")
@@ -240,8 +256,10 @@ def parse_header(lines):
 	set_paths()
 	set_file_properties()
 
+
 for file in files:
 	parse_doc(reduce(os.path.join,[cwd,"to_process",file]))
-	make_html(os.path.join(cwd,"to_process",file))
-	#os.remove(reduce(os.path.join,[cwd,"to_process",file]))
+	result=make_html(os.path.join(cwd,"to_process",file))
+	if result==1:
+		os.remove(reduce(os.path.join,[cwd,"to_process",file]))
 	meta={}

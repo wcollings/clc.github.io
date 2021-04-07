@@ -3,6 +3,7 @@ import re
 import htmldoc
 import globals as g
 from htmldoc import htmldoc as hd
+import dirs
 
 class conflict:
 	def __init__(self, fname,first,second):
@@ -15,29 +16,12 @@ class conflict:
 
 
 g.failed_files=[]
-ignore_folders=[".git",".idea",".vscode","__pycache__"]
 ignore_files=["contact.html","contact_old.html","disclaimer.html","faq.html",
 	"search.html", "template.html","source.html","updates.html", ".missing.html.swp", "missing.html",
 	"sources.html"]
-all_files={}
-conflicts=[]
-for root, dirs,files in os.walk("."):
-	for name in files:
-		if name in ignore_files:
-			continue
-		if not ".html" in name:
-			continue
-		if "index" in name:
-			continue
-		if name in all_files:
-			conflicts.append(conflict(name,all_files[name][-1],root))
-			all_files[name].append(g.splitall(root))
-		else:
-			all_files[name]=[g.splitall(root)]
-
-g.all_files=all_files
-print("I found {} songs".format(len(all_files)))
-print("and {} conflicts".format(len(conflicts)))
+dirs.ignore_files=ignore_files
+g.all_files=dirs.get_files()
+print("I found {} songs".format(len(g.all_files)))
 g.links_f=open("links_to_update.txt","w")
 for root,dirs,files in os.walk("."):
 	for name in files:
