@@ -13,8 +13,8 @@ class htmldoc:
 		try:
 			self.soup=bs(open(file,'r', encoding=format),'html.parser')
 			cleaned=self.soup.find("cleaned")
-			if cleaned is not None:
-				self.skip=True
+			#if cleaned is not None:
+				#self.skip=True
 			self.title=self.soup.title
 			if "404" in self.title.string:
 				self.skip=True
@@ -131,7 +131,7 @@ class htmldoc:
 		if self.skip:
 			return
 		split_path=g.splitall(self.originalFile)
-		path_home="../"*(len(split_path)-1)
+		path_home="../"*(len(split_path)-2)
 		links=self.soup.find_all("a")
 		links[0]["href"]=path_home+"index.html"
 		if "Artists" in links[1].get_text():
@@ -148,7 +148,7 @@ class htmldoc:
 				if new_path==-1:
 					g.links_f.write('"{}" in file "{}"\n'.format(link["href"], self.originalFile))
 				else:
-					temp=g.find_path(link["href"], album)
+					temp="../../"+new_path
 					
 				#g.links_f.write('"{}"->"{}"'.format(link["href"],g.find_path(link["href"], album)))
 			#return
@@ -213,7 +213,7 @@ class htmldoc:
 				fp=open(file,'w')
 			else:
 				#os.remove(self.originalFile)
-				fp=open(self.originalFile,'w', encoding="latin-1")
+				fp=open(self.originalFile,'wb')
 			self.soup.smooth()
 			fp.write(self.soup.prettify("latin-1"))
 			fp.close()

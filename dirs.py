@@ -22,9 +22,8 @@ ignore_files=["contact.html","contact_old.html","disclaimer.html","faq.html",
 	"search.html", "template.html","source.html","updates.html", ".missing.html.swp", "missing.html",
 	"sources.html"]
 
-def get_files():
+def get_files(songs_only=False):
 	all_files={}
-	conflicts=[]
 	for root, dirs,files in os.walk("."):
 		for name in files:
 			if name in ignore_files:
@@ -33,8 +32,14 @@ def get_files():
 				continue
 			if "index" in name:
 				continue
+			if root==".":
+				continue
+			path=g.splitall(root)
+			if songs_only:
+				if path[-1]==name[:name.find(".")]:
+					continue
 			if name in all_files:
-				all_files[name].append(g.splitall(root))
+				all_files[name].append(path)
 			else:
-				all_files[name]=[g.splitall(root)]
+				all_files[name]=[path]
 	return all_files

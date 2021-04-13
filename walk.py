@@ -33,25 +33,29 @@ for root,dirs,files in os.walk("."):
 		cf=hd(os.path.join(root,name))
 		temp=g.splitall(os.path.join(root,name))
 		if root==".":
-			cf.insert_css("style.css")
-			cf.clean()
-			cf.write()
+			#cf.insert_css("style.css")
+			#cf.clean()
+			#cf.write()
+			continue
 		#"index.html" is always an artist
 		if "index" in name:
 			cf.ftype="artist"
-			cf.clean()
 			cf.insert_css("../style.css")
+			cf.clean()
+			cf.update_links()
 		#the album file is under the same name as its folder, so it's ".../album/album.html"
 		elif temp[2] in name:
 			cf.ftype="album"
-			cf.clean()
 			cf.insert_css("../../style.css")
+			cf.clean()
+			cf.update_links()
 		else:
 			cf.ftype="song"
 			cf.clean()
+			cf.update_links()
 			cf.insert_css("../../style.css")
 		#cf.update_links()
 		cf.write()
 print("Failed files:")
-print(htmldoc.failed_files)
+print(g.failed_files)
 g.links_f.close()

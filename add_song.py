@@ -73,7 +73,8 @@ def add_language(line):
 	else:
 		return line
 	
-def format_lyrics():
+
+def convert_characers(line):
 	char_map={
 		"\\`a":"à", "\\'a":"á", "\\^a":"â",
 		"\\`A":"À", "\\'A":"Á", "\\^A":"Â",
@@ -90,16 +91,13 @@ def format_lyrics():
 		"\\`u":"ù", "\\'u":"ú", "\\^u":"û",
 		"\\`U":"Ù", "\\'U":"Ú", "\\^U":"Û"
 	}
+	return line.translate(char_map)
+	
+def format_lyrics():
 	#First we're gonna convert the accent mark characters if they need it
-	#We should only need to check the first column of lyrics.
 	#if there are more than 1 column, the second will be in English regardless
 	for i in range(len(lyrics[0])):
-		if "\\" in lyrics[0][i]:
-			pos=lyrics[0][i].find("\\")
-			old_char=lyrics[0][i][pos:pos+3]
-			new_char=char_map[old_char]
-			lyrics[0][i]=lyrics[0][i].replace(old_char,new_char)
-	
+		lyrics[0][i]=convert_characters(lyrics[0][i])
 	newp=False
 	# The first line is the "Lyrics:"/"Translation:" line. It's already been set, so write it literally
 	with tag("tr"):
@@ -175,10 +173,16 @@ def make_row(lines, newp=False):
 		for line in lines:
 			if newp:
 				with tag("td", id="newpara"):
-					text(line)
+					if line[0]="@":
+						doc.asis(line[1:])
+					else:
+						text(line)
 			else:
 				with tag("td"):
-					text(line)
+					if line[0]="@":
+						doc.asis(line[1:])
+					else:
+						text(line)
 
 def set_file_properties():
 	meta["path"]=[]
@@ -251,7 +255,7 @@ def parse_header(lines):
 	for line in lines:
 		results=strip.search(line)
 		k=results.group(1)
-		v=results.group(2)
+		v=convert_characters(results.group(2))
 		meta[k]=v
 	set_paths()
 	set_file_properties()

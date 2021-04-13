@@ -1,0 +1,18 @@
+ARTIST="{Griogair} Labhruidh"
+ALBUM="{Dail}-Riata"
+SONG="Dail-Riata"
+LANGUAGE="G\`aidhlig (Scottish Gaelic)"
+=====
+Tha mo chr\`idh'-sa a' seinn gu treun,
+Mu 'n tir bu dual dhomh 's do chainnt na F\`einn'
+Duthaich mhaiseach a rinn m' \`arach;
+Tir na s\`ar-laoch nam beanntan \`ard
+
+Mi 'n seo nam chr\`uban 's mi cianall t\`ursach,
+gun t\`amh gun sunnd is mo shaoghal gun s\`ith
+Cha b\`as no buaireadh a dh\`uisg mo snuaintean,
+cha fuath nab cruinneag a bhuail mo chr\`idh'
+Ach 's e chr\`aidh me - cionn-f\`th mo l\`eiridh -
+get theireadh c\`ach gur an cr\`aiteach mi;
+'S e s\`iol na gr\`aisge chaidh an cur le Sasainn
+an t\`ir na G\`aidhlig a ghleus mo str\`i

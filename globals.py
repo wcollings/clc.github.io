@@ -31,7 +31,8 @@ def find_path(to_find, album=None):
 	for result in matches:
 		if path[1] in result[1]:
 			if len(result) > 2:
-				new_path= "../../{}/{}/{}".format(result[1],result[2],path[-1])
+				new_path= "{}/{}/{}".format(result[1],result[2],path[-1])
 			else: #It's most likely trying to link to a puirt or a compilation
-				new_path= "../../{}/{}".format(result[1],path[-1])
+				new_path= "{}/{}".format(result[1],path[-1])
 			return new_path
+	return -1
