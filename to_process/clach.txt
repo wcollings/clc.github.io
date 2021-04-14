@@ -2,7 +2,7 @@ ARTIST="{Griogair} Labhruidh"
 ALBUM="{Dail}-Riata"
 SONG="Clach Eanraig"
 LANGUAGE="G\`aidhlig (Scottish Gaelic)"
-CREDITS="Traditional; arranged by Griogair Labhruidh<ol><li>Biodag Dh\`omnaill 's Alasdair<li>Coma Leis na h-Ighneagan C\`iobairean Tulloch Obha<\ol>"
+CREDITS="Traditional; arranged by Griogair Labhruidh<ol><li>Biodag Dh\`omnaill 's Alasdair</li><li>Coma Leis na h-Ighneagan C\`iobairean Tulloch Obha</li></ol>"
 ===
 @<b>Biodag Dh\`omhnall 'Ic Alasdair:</b>
 Siud a' rud a thogadh fonn
@@ -31,9 +31,9 @@ bidh iad as na digean is binean an colais dhar
 Coma leis na h-Ighneagan C\`iobairean Tulloch Obha
 bidh iad as na digean is binean an colais dhar
 
-Tairnamaid, te\`arnamaid, f\agamaid Tulloch Obha
-Tairnamaid, te\`arnamaid, f\agamaid Tulloch Obha
-Tairnamaid, te\`arnamaid, f\agamaid Tulloch Obha
+Tairnamaid, te\`arnamaid, f\`agamaid Tulloch Obha
+Tairnamaid, te\`arnamaid, f\`agamaid Tulloch Obha
+Tairnamaid, te\`arnamaid, f\`agamaid Tulloch Obha
 Coma leis na h-Ighneagan C\`iobairean Tulloch Obha
 ===
 @<b>MacAlasdair's Dirk</b>

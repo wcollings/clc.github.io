@@ -30,7 +30,7 @@ def make_html(f):
 	format_lyrics()
 	lyrics="".join(doc.getvalue())
 	lyrics_line=0
-	pos=31
+	pos=68
 	lines.insert(pos,lyrics)
 	print("Writing to file: {}".format(meta["writepath"]))
 	if os.path.exists(meta["writepath"]):
@@ -41,7 +41,7 @@ def make_html(f):
 
 	soup=bs("".join(lines), 'html.parser')
 	soup.smooth()
-	f.write(soup.prettify("latin-1"))
+	f.write(soup.prettify("ISO-8859-1"))
 	f.close()
 	if not os.path.exists(reduce(os.path.join,[meta["ART_LINK"],meta["ALB_LINK"],meta["ALB_LINK"]+".html"])):
 		print("Please note that there isn't an index file for {} yet, so it would help to make that".format(meta["ALBUM"]))
@@ -74,7 +74,7 @@ def add_language(line):
 		return line
 	
 
-def convert_characers(line):
+def convert_characters(line):
 	char_map={
 		"\\`a":"à", "\\'a":"á", "\\^a":"â",
 		"\\`A":"À", "\\'A":"Á", "\\^A":"Â",
@@ -91,7 +91,11 @@ def convert_characers(line):
 		"\\`u":"ù", "\\'u":"ú", "\\^u":"û",
 		"\\`U":"Ù", "\\'U":"Ú", "\\^U":"Û"
 	}
-	return line.translate(char_map)
+	for key in char_map:
+		if key in line:
+			pos=line.find(key)
+			line=line[:pos]+char_map[key]+line[pos+3:]
+	return line
 	
 def format_lyrics():
 	#First we're gonna convert the accent mark characters if they need it
@@ -173,13 +177,13 @@ def make_row(lines, newp=False):
 		for line in lines:
 			if newp:
 				with tag("td", id="newpara"):
-					if line[0]="@":
+					if line[0]=="@":
 						doc.asis(line[1:])
 					else:
 						text(line)
 			else:
 				with tag("td"):
-					if line[0]="@":
+					if line[0]=="@":
 						doc.asis(line[1:])
 					else:
 						text(line)
@@ -207,7 +211,7 @@ def set_file_properties():
 		else:
 			meta["path"].append(temp.split(" "))
 				
-	meta["ALB_LINK"]="@@ALBUM INDEX NAME@@"
+	#meta["ALB_LINK"]="@@ALBUM INDEX NAME@@"
 	meta["path"].append(str(meta["SONG_LINK"]))
 	meta["writepath"]=reduce(os.path.join,meta["path"])
 
@@ -261,9 +265,12 @@ def parse_header(lines):
 	set_file_properties()
 
 
+cwd=os.getcwd()
 for file in files:
 	parse_doc(reduce(os.path.join,[cwd,"to_process",file]))
 	result=make_html(os.path.join(cwd,"to_process",file))
-	if result==1:
-		os.remove(reduce(os.path.join,[cwd,"to_process",file]))
+	lyrics=[]
+	meta={}
+	doc,tag,text=Doc().tagtext()
+	#os.remove(reduce(os.path.join,[cwd,"to_process",file]))
 	meta={}

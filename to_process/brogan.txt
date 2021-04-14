@@ -34,6 +34,7 @@ Am fear a th\`ath ri ch\`eile 's tus iad
 Cha toir mise turn dha tuilleadh
 On a mheall e mi le foill
 Gur ann a thoill e chorcach
+
 Mur a dealaich e ri dh\`oigheann
 Cha toir duine be\`o dha cuirean
 Faodaidh e 'n doras a dh\`unadh
@@ -42,7 +43,7 @@ Faodaidh e 'n doras a dh\`unadh
 A' reic nam b\`ioball anns gach baile
 'S m\`or am milleadh air mo chli\`u
 A thoirt do dhi\`u na gr\`oigean
-====
+=====
 The dancing shoes
 won't do at all, at all
 The dancing shoes are no use
@@ -81,4 +82,5 @@ he can just shut the door
 and lie out at the back of the moor
 the money that I had saved up
 selling bibles in every village
-my reputation is spoiled having considered the botcher usefull
+my reputation is spoiled for
+having considered the botcher useful
