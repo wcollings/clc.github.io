@@ -8,10 +8,8 @@ class htmldoc:
 	def __init__(self, file, format=None):
 		self.originalFile=file
 		self.skip=False
-		if format is None:
-			format="ISO-8859-1"
 		try:
-			self.soup=bs(open(file,'r', encoding=format),'html.parser')
+			self.soup=bs(open(file,'r'),'html.parser')
 			cleaned=self.soup.find("cleaned")
 			#if cleaned is not None:
 				#self.skip=True
@@ -213,9 +211,9 @@ class htmldoc:
 				fp=open(file,'w')
 			else:
 				#os.remove(self.originalFile)
-				fp=open(self.originalFile,'wb')
+				fp=open(self.originalFile,'w')
 			self.soup.smooth()
-			fp.write(self.soup.prettify("latin-1"))
+			fp.write(self.soup.prettify())
 			fp.close()
 		except FileNotFoundError:
 			print("I couldn't find a file called {}".format(self.originalFile))
