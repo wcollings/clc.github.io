@@ -37,11 +37,11 @@ def make_html(f):
 		temp=input("WARNING: this file already exists. Overwright? (y/n)\n>")
 		if not (temp=="y" or temp=="Y"):
 			return -1
-	f=open(meta["writepath"],'wb')
+	f=open(meta["writepath"],'w')
 
 	soup=bs("".join(lines), 'html.parser')
 	soup.smooth()
-	f.write(soup.prettify("ISO-8859-1"))
+	f.write(soup.prettify())
 	f.close()
 	if not os.path.exists(reduce(os.path.join,[meta["ART_LINK"],meta["ALB_LINK"],meta["ALB_LINK"]+".html"])):
 		print("Please note that there isn't an index file for {} yet, so it would help to make that".format(meta["ALBUM"]))
@@ -92,8 +92,7 @@ def convert_characters(line):
 		"\\`U":"Ù", "\\'U":"Ú", "\\^U":"Û"
 	}
 	for key in char_map:
-		if key in line:
-			pos=line.find(key)
+		while pos:=line.find(key) != -1:
 			line=line[:pos]+char_map[key]+line[pos+3:]
 	return line
 	
