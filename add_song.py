@@ -92,7 +92,7 @@ def convert_characters(line):
 		"\\`U":"Ù", "\\'U":"Ú", "\\^U":"Û"
 	}
 	for key in char_map:
-		while pos:=line.find(key) != -1:
+		while (pos:=line.find(key)) != -1:
 			line=line[:pos]+char_map[key]+line[pos+3:]
 	return line
 	
