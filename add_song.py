@@ -3,8 +3,8 @@ from yattag import Doc
 from functools import reduce
 from bs4 import BeautifulSoup as bs
 import re
-import json
 import dirs
+import sys
 
 
 files=os.listdir("to_process")
@@ -12,6 +12,8 @@ meta={}
 lyrics=[]
 dir_s=dirs.get_folders()
 doc,tag,text=Doc().tagtext()
+if len(sys.argv) > 1:
+	files=sys.argv[1:]
 
 def make_html(f):
 	artist=re.compile("@@ARTIST")
@@ -37,7 +39,7 @@ def make_html(f):
 		temp=input("WARNING: this file already exists. Overwright? (y/n)\n>")
 		if not (temp=="y" or temp=="Y"):
 			return -1
-	f=open(meta["writepath"],'w')
+	f=open(meta["writepath"],'w',encoding="UTF-8")
 
 	soup=bs("".join(lines), 'html.parser')
 	soup.smooth()
@@ -111,21 +113,13 @@ def format_lyrics():
 	#If there's only 1 column, just print that one and skip over all the ugliness following
 	if len(lyrics)==1:
 		for line in lyrics[0][1:]:
-			if line=="":
-				newp=True
-				continue
-			make_row([line], newp)
-			newp=False
+			make_row([line])
 		return
 
 	# if they're the same length, there's not a weird edge case to deal with
 	if len(lyrics[0])==len(lyrics[1]):
 		for l1,l2 in zip(lyrics[0][1:],lyrics[1][1:]):
-			if l1=="":
-				newp=True
-				continue
-			make_row([l1,l2], newp)
-			newp=False
+			make_row([l1,l2])
 		return
 
 	tag_r=re.compile("(!.*?) ")
@@ -156,36 +150,25 @@ def format_lyrics():
 			lyrics[0][i+1]=tag_r.sub("",lyrics[0][i+1])
 		
 		#newlines show up as "", but putting a blank table row does nothing. This is a (kinda clunky) workaround
-		if lyrics[0][i+1]=="":
-			print_both=False
-			newp=True
-			continue
-
 		#and then just print the line (or lines)
 		if print_both:
-			make_row([lyrics[0][i+1],lyrics[1][l1]], newp)
+			make_row([lyrics[0][i+1],lyrics[1][l1]])
 			l1+=1
 		else:
-			make_row([lyrics[0][i+1]], newp)
-		newp=False
+			make_row([lyrics[0][i+1]])
 	
 	
 
-def make_row(lines, newp=False):
+def make_row(lines):
 	with tag("tr"):
 		for line in lines:
-			if newp:
-				with tag("td", id="newpara"):
-					if line[0]=="@":
-						doc.asis(line[1:])
-					else:
-						text(line)
-			else:
-				with tag("td"):
-					if line[0]=="@":
-						doc.asis(line[1:])
-					else:
-						text(line)
+			with tag("td"):
+				if line=="":
+					doc.asis("&nbsp;")
+				elif line[0]=="@":
+					doc.asis(line[1:])
+				else:
+					text(line)
 
 def set_file_properties():
 	meta["path"]=[]
