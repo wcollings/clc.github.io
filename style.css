@@ -35,3 +35,7 @@ Body:link{
 #newpara{
 	padding: 20px 10px 0px 0px;
 }
+#border{
+	border:2px solid black;
+	padding:10px;
+}

@@ -213,7 +213,7 @@ class htmldoc:
 				#os.remove(self.originalFile)
 				fp=open(self.originalFile,'w')
 			self.soup.smooth()
-			fp.write(self.soup.prettify())
+			fp.write(self.soup.prettify(formatter='html'))
 			fp.close()
 		except FileNotFoundError:
 			print("I couldn't find a file called {}".format(self.originalFile))
