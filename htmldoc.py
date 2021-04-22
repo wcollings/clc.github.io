@@ -5,11 +5,11 @@ import json
 from functools import reduce
 
 class htmldoc:
-	def __init__(self, file, format=None):
+	def __init__(self, file, format="ISO-8859-1"):
 		self.originalFile=file
 		self.skip=False
 		try:
-			self.soup=bs(open(file,'r'),'html.parser')
+			self.soup=bs(open(file,'r', encoding=format),'html.parser')
 			cleaned=self.soup.find("cleaned")
 			#if cleaned is not None:
 				#self.skip=True
@@ -210,7 +210,7 @@ class htmldoc:
 			if file != None:
 				fp=open(file,'w')
 			else:
-				#os.remove(self.originalFile)
+				os.remove(self.originalFile)
 				fp=open(self.originalFile,'w')
 			self.soup.smooth()
 			fp.write(self.soup.prettify(formatter='html'))
@@ -219,6 +219,7 @@ class htmldoc:
 			print("I couldn't find a file called {}".format(self.originalFile))
 		except UnicodeEncodeError as ue:
 			print(ue.object[ue.start:ue.end])
+			print("Error in file: {}".format(self.originalFile))
 			print("The encoding happened because of an encoding error: {}".format(ue.encoding))
 
 

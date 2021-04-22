@@ -1,5 +1,6 @@
 import os
 
+failed_files=[]
 all_files={}
 def splitall(path):
 	if not "/" in path and not "\\" in path:
