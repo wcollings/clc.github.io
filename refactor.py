@@ -1,9 +1,10 @@
 import os
 import re
 import shutil
+from htmldoc import htmldoc as hd
 #import linking as l
 
-
+#This is the main artist processing function
 def search_dir(d):
 	c_dir=os.path.join(curr_dir,d)
 	files=os.listdir(c_dir)
@@ -20,6 +21,7 @@ def search_dir(d):
 	f.close()
 	album_list=[]
 	for line in lines:
+		# see if we can find an album entry
 		album=albumpat.findall(line)
 		if album != []:
 			temp=sort_album(c_dir,album[0])
@@ -49,7 +51,14 @@ def sort_album(path,a):
 	shutil.move(os.path.join(path,coverart),os.path.join(path,a_name,coverart))
 	for song in songs:
 		if os.path.exists(os.path.join(path,song)):
-			process_song(path,song,a_name)
+			#process_song(path,song,a_name)
+			f=hd(os.path.join(path,song)
+			f.clean()
+			f.ftype="song"
+			f.update_links()
+			f.insert_css("../../style.css")
+			f.write(reduce(os.path.join, [path,a_name,song]))
+			os.remove(os.path.join(path,song))
 
 
 def process_song(path,song, album):
@@ -102,12 +111,10 @@ def edit_links(lines):
 
 structure={}
 dirs=[]
-albumpat=re.compile("\s+[\d?]{4} -.*\"(.*\.html)\"")
+#albumpat=re.compile("\s+[\d?]{4} -.*\"(.*\.html)\"")
 songpat=re.compile("\s+\d+\. ?<a.+\"(.*\.html)\"")
-curr_dir=os.getcwd()
-for files in os.listdir(curr_dir):
-	if os.path.isdir(os.path.join(curr_dir, files)):
-		dirs.append(files)
+albums=["gaelicwomen.html","celticmoods.html","celticvoices.html","futuresound.html","gaelicireland.html","gaelicscotland.html","gaelicscotland2.html","gaelicvoices.html","scotland.html","celticwomen1.html","celticwomen2.html"]
+
 
 print("I found {} directories.".format(len(dirs)))
 full_record={}
