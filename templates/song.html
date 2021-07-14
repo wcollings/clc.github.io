@@ -7,6 +7,7 @@
   <link href="../../style.css" rel="stylesheet"/>
  </head>
  <body>
+   <p>
   <a href="../index.html">
    Celtic Lyrics Corner
   </a>
@@ -22,6 +23,8 @@
   <a href="@@ALB_LINK">
    @@ALBUM
   </a>
+  &gt;
+  @@TITLE
   <br/>
   <div align="center">
    <table id="head_t">
@@ -35,19 +38,7 @@
       </h3>
      </td>
     </tr>
-    <tr>
-     <td id="lc">
-      <u>
-       <b>
-        Credits
-       </b>
-       :
-      </u>
-     </td>
-     <td>
-      @@CREDITS
-     </td>
-    </tr>
+    <tr> <td id="lc"> <u> <b> Credits </b> : </u> </td> <td> @@CREDITS </td> </tr>
     <tr>
      <td id="lc">
       <u>
@@ -76,6 +67,9 @@
     </tr>
    </table>
   </div>
+  <table id="lyrics">
+     @@LYRICS
+  </table>
   <cleaned>
   </cleaned>
  </body>

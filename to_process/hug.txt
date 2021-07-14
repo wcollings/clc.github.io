@@ -1,0 +1,48 @@
+ARTIST="Julie {Fowlis}"
+ALBUM="Gach {Sgeul}"
+SONG="{H\`ug} Air A' Bhonaid Mh\`oir"
+LANGUAGE="G\`aidhlig"
+=====
+<b><u>H\`ug Air A' Bhonaid Mh\`oir</u></b>
+Hùg air a’ bhonaid mhòir,
+Cuiribh oirre ’s leigibh leatha;
+Tuilleadh air a’ bhonaid eile,
+Chan eil leth gu leòr oirre.
+
+Bhonaid a bh’ aig Dòmhnall Bàn
+Ann an Bothalam na tàmh,
+Bha i uiread ris an spàrr,
+B’ àird’ i na lòban.
+
+<b><u> Da thàbh air an fharaidh</b></u>
+Da thàbh air an fharaidh,
+Tha rud shìos anns a’ charaidh;
+Da thàbh air an fharaidh,
+Tha rud aig an fhaoileig.
+
+Ged tha mi gun rud agam,
+Tha rud shios anns a’ charaidh;
+Ged tha mi gun rud agam,
+Tha rud aig an fhaoileig.
+====
+<b><u>Celebrate the Great Bonnet</b></u>
+Celebrate the great bonnet!
+Add to it, leave it alone.
+More on the other bonnet.
+There’s not half enough on it.
+
+Donald Ban’s bonnet
+is to be found in Bothalam.
+It was as high as the roof joist,
+higher than the corn-stack frame.
+
+<b><u>Two spoon nets in the loft,</b></u>
+Two spoon nets in the loft,
+There’s something in the fish-trap;
+Two spoon-nets in the loft,
+The seagull has a catch.
+
+Although I’m empty-handed,
+There’s something in the fish trap;
+Although I’m empty handed,
+The seagull has a catch.

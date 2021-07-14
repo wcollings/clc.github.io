@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>
+   Julie Fowlis - H&ugrave;g Air A' Bhonaid Mh&ograve;ir
+  </title>
+  <link href="../../style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <p>
+   <a href="../index.html">
+    Celtic Lyrics Corner
+   </a>
+   &gt;
+   <a href="../artists.html">
+    Artists
+   </a>
+   &gt;
+   <a href="../index.html">
+    Julie Fowlis
+   </a>
+   &gt;
+   <a href="sgeul">
+    Gach Sgeul
+   </a>
+   &gt;
+  H&ugrave;g Air A' Bhonaid Mh&ograve;ir
+   <br/>
+   <div align="center">
+    <table id="head_t">
+     <tr>
+      <td id="lc">
+       <img src="sgeul.jpg" width="100"/>
+      </td>
+      <td>
+       <h3>
+        H&ugrave;g Air A' Bhonaid Mh&ograve;ir
+       </h3>
+      </td>
+     </tr>
+     <tr>
+      <td id="lc">
+       <u>
+        <b>
+         Appears On
+        </b>
+        :
+       </u>
+      </td>
+      <td>
+       Gach Sgeul
+      </td>
+     </tr>
+     <tr>
+      <td id="lc">
+       <u>
+        <b>
+         Language
+        </b>
+        :
+       </u>
+      </td>
+      <td>
+       G&agrave;idhlig
+      </td>
+     </tr>
+    </table>
+   </div>
+   <table id="lyrics">
+    <tr>
+     <td>
+      <b>
+       <u>
+        Lyrics:
+       </u>
+      </b>
+     </td>
+     <td>
+      <b>
+       <u>
+        English Translation:
+       </u>
+      </b>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <b>
+       <u>
+        H&ugrave;g Air A' Bhonaid Mh&ograve;ir
+       </u>
+      </b>
+     </td>
+     <td>
+      <b>
+       <u>
+        Celebrate the Great Bonnet
+       </u>
+      </b>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      H&ugrave;g air a' bhonaid mh&ograve;ir,
+     </td>
+     <td>
+      Celebrate the great bonnet!
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Cuiribh oirre 's leigibh leatha;
+     </td>
+     <td>
+      Add to it, leave it alone.
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Tuilleadh air a' bhonaid eile,
+     </td>
+     <td>
+      More on the other bonnet.
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Chan eil leth gu le&ograve;r oirre.
+     </td>
+     <td>
+      There&rsquo;s not half enough on it.
+     </td>
+    </tr>
+    <tr>
+     <td>
+      &nbsp;
+     </td>
+     <td>
+      &nbsp;
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Bhonaid a bh' aig D&ograve;mhnall B&agrave;n
+     </td>
+     <td>
+      Donald Ban&rsquo;s bonnet
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Ann an Bothalam na t&agrave;mh,
+     </td>
+     <td>
+      is to be found in Bothalam.
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Bha i uiread ris an sp&agrave;rr,
+     </td>
+     <td>
+      It was as high as the roof joist,
+     </td>
+    </tr>
+    <tr>
+     <td>
+      B' &agrave;ird' i na l&ograve;ban.
+     </td>
+     <td>
+      higher than the corn-stack frame.
+     </td>
+    </tr>
+    <tr>
+     <td>
+      &nbsp;
+     </td>
+     <td>
+      &nbsp;
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <b>
+       <u>
+        Da th&agrave;bh air an fharaidh
+       </u>
+      </b>
+     </td>
+     <td>
+      <b>
+       <u>
+        Two spoon nets in the loft,
+       </u>
+      </b>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Da th&agrave;bh air an fharaidh,
+     </td>
+     <td>
+      Two spoon nets in the loft,
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Tha rud sh&igrave;os anns a' charaidh;
+     </td>
+     <td>
+      There&rsquo;s something in the fish-trap;
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Da th&agrave;bh air an fharaidh,
+     </td>
+     <td>
+      Two spoon-nets in the loft,
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Tha rud aig an fhaoileig.
+     </td>
+     <td>
+      The seagull has a catch.
+     </td>
+    </tr>
+    <tr>
+     <td>
+      &nbsp;
+     </td>
+     <td>
+      &nbsp;
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Ged tha mi gun rud agam,
+     </td>
+     <td>
+      Although I&rsquo;m empty-handed,
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Tha rud shios anns a' charaidh;
+     </td>
+     <td>
+      There&rsquo;s something in the fish trap;
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Ged tha mi gun rud agam,
+     </td>
+     <td>
+      Although I&rsquo;m empty handed,
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Tha rud aig an fhaoileig.
+     </td>
+     <td>
+      The seagull has a catch.
+     </td>
+    </tr>
+   </table>
+   <cleaned>
+   </cleaned>
+  </p>
+ </body>
+</html>

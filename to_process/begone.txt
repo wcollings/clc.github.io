@@ -1,7 +1,0 @@
-ARTIST="Malinky"
-ALBUM="Handsel"
-SONG="Begone Bonnie Laddie"
-LANGUAGE="Scots"
-CREDITS="Written by Fiona Hunter, Mark Dunlop, Mike Vass, Steve Byrne"
-===
-

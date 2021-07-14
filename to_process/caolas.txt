@@ -1,0 +1,108 @@
+ARTIST="Julie {Fowlis}"
+ALBUM="Gach {Sgeul}"
+SONG="An Ròn/Ann An Caolas od Odram"
+LANGUAGE="Gàidhlig"
+=====
+<b><u>An Ròn</u></b>
+"Mise nighean Rìgh-fo-Thuinn
+Fuil nan rìghrean na mo chrè -
+Ged a chì sibh mi nam ròn
+Tha mi mòrail nam thìr fhèin.
+
+“Tìr-fo-Thuinn mo dhachaigh dhùint’
+Innis dhùthchasach nan ròn;
+Caidlidh mi air leacan sàil’,
+Mi fhìn ’s mo bhàn-chuilean òg.”
+
+A Bhana-phrionns’ a’ chuain shiar,
+A bheil sgeul agad ri luaidh?
+Nach inns thu dhuinn mar a bha
+Mun do ghabh sibh tàmh sa chuan?
+
+“Chaidh na geasan a chur oirnn
+Rè ar beò-bhith le luchd-fuath,
+’S ged a tha sinn snàmh nan caol
+’S e nàdar daonnd’ tha dhuinn dual.
+
+“Aig tràth-marbh air oidhche fèill
+Tilgidh sinn ar bèin air tràigh,
+’S cluichidh sinn nar n-òighean suairc’
+A’ crathadh ar cuaillean bàn.
+
+“Ach a-nochd tha mi nam ròn
+Air an lic an còrs’ a’ chuain:
+’S e mo nàdar bhith toirt gaol,
+’S do chlann-daoine thug mi luaidh.”
+
+<b><u>Ann an Caolas Od Odrum</u></b>
+Ann an Caolas Od Odrum far an coidleadh an ròn,
+is far nach cluinnte guth duin’ ach fuaim tuinne ’s glog geòidh
+Muime 'g altram a pàistean 's i gan tàladh gu ciùin,
+gu bheil tulgadh nan cuantan ga sìor luasgadh nan suain.
+
+Hion da hion do hion da odar da
+Hion da hion do hion da odar da
+Hì o dan dao, hì o dan dao,
+Hì o dan dao odar da, odar da
+
+Muime 'g altram a pàistean 's i gan tàladh gu ciùin,
+gu bheil tulgadh nan cuantan ga sìor luasgadh nan suain.
+An ròn rìoghail a' gusgail, 'n eala guileag ri thaobh,
+a' mhaighdeann-mhara ’s i bruadar anns an uaigneas air laoch.
+
+An ròn rìoghail a’ gusgail, ’n eala guileag ri thaobh,
+a’ mhaighdeann-mhara ’s i bruadar anns an uaigneas air laoch.
+Ann an Caolas Od Odrum far an coidleadh an ròn,
+is far nach cluinnte guth duine ach fuaim tuinne ’s glog geòidh.
+====
+<b><u>The Seal</u></b>
+"I am daughter of the King-under-Sea
+Royal blood flows in my veins -
+Though you see me as a seal
+I am noble in my own land.
+
+"Land-below-waves my prison home,
+Hereditary domain of the seal;
+I will sleep on a salt sea slab,
+Myself and my white-furred pup."
+
+O Princess of the western ocean
+Do you have a tale to weave?
+Will you tell us how it was
+Before you came to live at sea?
+
+"Spells were laid upon us
+During our human lives by foes -
+Though we now swim the straits
+Human nature is our heritage.
+
+"At the dead of feast-day night
+We cast our sealskins on the sand,
+Playing there as gentle maids
+Shaking our blonde tresses.
+
+"But tonight I am a seal
+On a rock beside the sea;
+It is my nature to give love,
+And mankind I hold dear."
+
+<b><u>In Caolas Od Odram</u></b>
+In Caolas Od Odrum where the seals would sleep
+where a human voice was never heard, only the sound of the waves and the calling of geese
+A stepmother nurses her children, softly singing a lullaby
+the movement of the waves gently rocks them to sleep.
+
+Hion da hion do hion da odar da
+Hion da hion do hion da odar da
+Hì o dan dao, hì o dan dao,
+Hì o dan dao odar da, odar da.
+
+A stepmother nurses her children, softly singing a lullaby
+the movement of the waves gently rocks them to sleep.
+The noble seal is mewling, the swan singing beside him
+the mermaid dreams in solitude of a hero.
+
+The noble seal is mewling, the swan singing beside him
+the mermaid dreams in solitude of a hero.
+In Caolas Od Odrum where the seals would sleep
+where a human voice was never heard, only the sound of the waves and the calling of geese.
