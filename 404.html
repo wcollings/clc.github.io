@@ -22,7 +22,7 @@
     function appendData(data)
     {
       var parts=window.location.href.split("/");
-      for (i=0; i < data[parts[3]].length(); ++i)
+      for (i=0; i < data[parts[3]].length; ++i)
       {
         if (parts[4] in data[parts[3]][i])
         {
