@@ -22,8 +22,14 @@
     function appendData(data)
     {
       var parts=window.location.href.split("/");
-      document.getElementById("demo").innerHTML = 
-      "This page doesn't exist, but you got here from:<br>" + data[parts[3]];
+      for (i=0; i < len(data[parts[3]]); ++i)
+      {
+        if (parts[4] in data[parts[3]][i])
+        {
+          document.getElementById("demo").innerHTML = 
+          "I found the page under the album: " + data[parts[3]][i];
+        }
+      }
     }
 		</script>
   </body>
