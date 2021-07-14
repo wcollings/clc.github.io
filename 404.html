@@ -12,7 +12,7 @@
   <p id="demo"></p>
 	<script>
     var parts=window.location.href.split("/");
-    fetch("dir_struct.json")
+    fetch("../dir_struct.json")
     .then(function(response) {
       return response.json();
     })
