@@ -1,4 +1,5 @@
 <!doctype html>
+ <script type="text/javascript" src="dir_struct.json"></script>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -9,10 +10,17 @@
   <body onload="redirect()">
 	<h1 style="text-align: center; padding-top: 50px; display: block;">Redirecting...</h1>
   <p id="demo"></p>
-	This is the redirect page. You got here from 
 	<script>
+    var parts=window.location.href.split("/");
+    fetch("dir_struct.json")
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function (data) {
+      appendData(data);
+    })
 document.getElementById("demo").innerHTML = 
-"This page doesn't exist, but you got here from:<br>" + window.location.href;
+"This page doesn't exist, but you got here from:<br>" + data[parts[3]];
 		</script>
   </body>
 </html>
