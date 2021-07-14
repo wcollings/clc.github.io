@@ -8,9 +8,11 @@
   </head>
   <body onload="redirect()">
 	<h1 style="text-align: center; padding-top: 50px; display: block;">Redirecting...</h1>
+  <p id="demo"></p>
 	This is the redirect page. You got here from 
 	<script>
-		window.location.href
+document.getElementById("demo").innerHTML = 
+"This page doesn't exist, but you got here from:<br>" + window.location.href;
 		</script>
   </body>
 </html>
