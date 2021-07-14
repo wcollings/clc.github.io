@@ -16,12 +16,15 @@ if len(sys.argv) > 1:
 	files=sys.argv[1:]
 
 def make_html(f):
+	"""
+		Generate the actual HTML page for this song
+	"""
+	lines=open("templates/song.html",'r').readlines()
+	# Parse the template, replacing the parts that need to be replaced
 	artist=re.compile("@@ARTIST")
 	album=re.compile("@@ALBUM")
 	song=re.compile("@@TITLE")
 	alb_l=re.compile("@@ALB_LINK")
-	language=re.compile("@@LANGUAGE")
-	lines=open("templates/song.html",'r').readlines()
 	for i in range(len(lines)):
 		lines[i]=artist.sub(meta["ARTIST"],lines[i])
 		lines[i]=album.sub(meta["ALBUM"],lines[i])
@@ -29,11 +32,9 @@ def make_html(f):
 		lines[i]=alb_l.sub(meta["ALB_LINK"],lines[i])
 		lines[i]=add_credits(lines[i])
 		lines[i]=add_language(lines[i])
-	format_lyrics()
-	lyrics="".join(doc.getvalue())
-	lyrics_line=0
-	pos=68
-	lines.insert(pos,lyrics)
+		lines[i]=add_lyrics(lines[i])
+
+	#if a song with this filename exists, prompt
 	print("Writing to file: {}".format(meta["writepath"]))
 	if os.path.exists(meta["writepath"]):
 		temp=input("WARNING: this file already exists. Overwright? (y/n)\n>")
@@ -41,22 +42,25 @@ def make_html(f):
 			return -1
 	f=open(meta["writepath"],'w',encoding="UTF-8")
 
+	#now save that
 	soup=bs("".join(lines), 'html.parser')
 	soup.smooth()
-	f.write(soup.prettify())
+	f.write(soup.prettify(formatter="html"))
 	f.close()
+
+	#helpful prompt if no album index file exists
 	if not os.path.exists(reduce(os.path.join,[meta["ART_LINK"],meta["ALB_LINK"],meta["ALB_LINK"]+".html"])):
 		print("Please note that there isn't an index file for {} yet, so it would help to make that".format(meta["ALBUM"]))
+
+	#helpful prompt if no artist index file exists
 	if meta["ART_LINK"] != "." and not os.path.exists(os.path.join(meta["ART_LINK"],"index.html")):
 		print("Plese note that there isn't an index file for {} yet, so it would help to make that".format(meta["ARTIST"]))
 	return 1
 
-	#First, read the header
-	#Then read the rest
-	#Check the number of "===" lines.
-		#2 means its in English (or Scots)
-		#3 means it's in Gaidhlig (or Gailge)
 def add_credits(line):
+	"""
+		If the "credits" signature is on this line, replace it. Otherwise return it unchanged
+	"""
 	credits=re.compile("@@CREDITS")
 	if credits.search(line):
 		if "CREDITS" in meta:
@@ -65,7 +69,11 @@ def add_credits(line):
 			return ""
 	else:
 		return line
+
 def add_language(line):
+	"""
+		If the "language" signature is on this line, replace it. Otherwise return it unchanged
+	"""
 	language=re.compile("@@LANGUAGE")
 	if language.search(line):
 		if "LANGUAGE" in meta:
@@ -75,8 +83,11 @@ def add_language(line):
 	else:
 		return line
 	
-
 def convert_characters(line):
+	"""
+		Replace shorthand accent marks with real accent marks, and replace funky 
+		UTF-8 quotation marks with standard quotation marks
+	"""
 	char_map={
 		"\\`a":"à", "\\'a":"á", "\\^a":"â",
 		"\\`A":"À", "\\'A":"Á", "\\^A":"Â",
@@ -91,14 +102,22 @@ def convert_characters(line):
 		"\\`O":"Ò", "\\'O":"Ó", "\\^O":"Ô",
 
 		"\\`u":"ù", "\\'u":"ú", "\\^u":"û",
-		"\\`U":"Ù", "\\'U":"Ú", "\\^U":"Û"
+		"\\`U":"Ù", "\\'U":"Ú", "\\^U":"Û",
+
+		"“":"\"", "”":"\"","’":"\'"
 	}
 	for key in char_map:
 		while (pos:=line.find(key)) != -1:
-			line=line[:pos]+char_map[key]+line[pos+3:]
+			line=line[:pos]+char_map[key]+line[pos+len(key):]
 	return line
 	
-def format_lyrics():
+def add_lyrics(line):
+	"""
+		Parse and process the lyrics. There can be one or two columns, and some handy "tagging" features as well
+	"""
+	lyrics_l=re.compile("@@LYRICS")
+	if not lyrics_l.search(line):
+		return line
 	#First we're gonna convert the accent mark characters if they need it
 	#if there are more than 1 column, the second will be in English regardless
 	for i in range(len(lyrics[0])):
@@ -120,7 +139,7 @@ def format_lyrics():
 	if len(lyrics[0])==len(lyrics[1]):
 		for l1,l2 in zip(lyrics[0][1:],lyrics[1][1:]):
 			make_row([l1,l2])
-		return
+		return "".join(doc.getvalue())
 
 	tag_r=re.compile("(!.*?) ")
 	tags={}
@@ -149,62 +168,86 @@ def format_lyrics():
 			#remove the tag
 			lyrics[0][i+1]=tag_r.sub("",lyrics[0][i+1])
 		
-		#newlines show up as "", but putting a blank table row does nothing. This is a (kinda clunky) workaround
 		#and then just print the line (or lines)
 		if print_both:
 			make_row([lyrics[0][i+1],lyrics[1][l1]])
 			l1+=1
 		else:
 			make_row([lyrics[0][i+1]])
+	return "".join(doc.getvalue())
 	
-	
-
 def make_row(lines):
+	"""
+	Format the raw lyrics, in *line* 
+	"""
 	with tag("tr"):
 		for line in lines:
 			with tag("td"):
 				if line=="":
 					doc.asis("&nbsp;")
-				elif line[0]=="@":
-					doc.asis(line[1:])
 				else:
-					text(line)
+					doc.asis(line)
 
+unknown_art_str="I couldn't find a folder for artist {}. If this artist already has a folder, enter the artist and album folder names with a space between them below. Otherwise just hit enter.\n>"
+unknown_alb_str="I couldn't find an album folder named {}. If this album does exist, enter the folder name. Otherwise, just hit enter\n>"
 def set_file_properties():
+	"""
+		process and verify the pre-processed path
+
+		Whereas set_path only parses strings, this then checks to make sure those folders exist, and determines the final path
+	"""
 	meta["path"]=[]
+	#if the artist or album folder provided are "root", skip the rest of this and just use that
 	if meta["ART_LINK"]=="." or meta["ALB_LINK"]==".":
 		meta["path"]=["."]
+
+	#"path" is the path, from root to the song itself.
+	# if the artist folder we were given does exist, throw that on the stack first
 	elif meta["ART_LINK"] in dir_s:
 		meta["path"].append(meta["ART_LINK"])
+
+		#then get a slice of the directory structure, pulling just the artist's subfolders
 		temp=dir_s[meta["ART_LINK"]]
+
+		#extract the album name and check if it exists
 		album=meta["ALB_LINK"]
 		if album in temp:
 			meta["path"].append(album)
+		# if it doesn't exist, prompt for that
 		else:
-			temp=input("I couldn't find an album folder named {}. If this album does exist,\
-			 enter the folder name. Otherwise, just hit enter".format(meta["ALB_LINK"]))
+			temp=input(unknown_alb_str.format(meta["ALB_LINK"]))
 			if temp=="":
 				meta["path"]=["."]
 	else:
-		temp=input("I couldn't find a folder for artist {}. If this artist already has a folder, enter the artist and album folder\
-			names with a space between them below. Otherwise just hit enter.".format(meta["ART_LINK"].lower()))
+		# if the artist folder doesn't exist, prompt for both the artist and album
+		temp=input(unknown_art_str.format(meta["ART_LINK"].lower()))
 		if temp=="":
 			meta["path"]=["."]
 		else:
 			meta["path"].append(temp.split(" "))
 				
-	#meta["ALB_LINK"]="@@ALBUM INDEX NAME@@"
 	meta["path"].append(str(meta["SONG_LINK"]))
+	#smoosh the whole path into a single string
 	meta["writepath"]=reduce(os.path.join,meta["path"])
 
 def set_paths():
+	"""
+		pre-process the file path
+
+		I've given an option to specify the relevent folder/file name in the same record as the metadata record. This just
+		checks if they've taken advantage of that, and sets the needed fields if so.
+	"""
 	if "ALB_LINK" not in meta:
 		if "{" in meta["ALBUM"]:
 			al=meta["ALBUM"]
+			#this is an ugly way of writing "all the characters that are inside the curly braces, but lowercase"
 			meta["ALB_LINK"]=al[al.find("{")+1:al.find("}")].lower()
 			meta["ALBUM"]=al.replace("{","").replace("}","")
+		# if they haven't specified an album by either a dedicated ALB_LINK field or by this, my only guess is 
+		# to take the first word of the album name, and use that.
 		else:
 			meta["ALB_LINK"]=meta["ALBUM"].split(" ")[0].lower()
+	# artists work the same, but with different fields
 	if "ART_LINK" not in meta:
 		if "{" in meta["ARTIST"]:
 			ar=meta["ARTIST"]
@@ -212,40 +255,66 @@ def set_paths():
 			meta["ARTIST"]=ar.replace("{","").replace("}","")
 		else:
 			meta["ART_LINK"]=meta["ARTIST"].split(" ")[0].lower()
+	# if they didn't specify a filename for the song, assume they want it to be the same as
+	# the filename that the unformatted song lyrics are in
 	if "SONG_LINK" not in meta:
-		_,s=os.path.split(meta["FNAME"])
-		meta["SONG_LINK"]=s[:-3]+"html"
+		if "{" in meta["SONG"]:
+			song=meta["SONG"]
+			meta["SONG_LINK"]=song[song.find("{")+1:song.find("}")].lower()+".html"
+			meta["SONG"]=song.replace("{","").replace("}","")
+			while (pos:=meta["SONG_LINK"].find("\\")) != -1:
+				meta["SONG_LINK"]=meta["SONG_LINK"][:pos]+meta["SONG_LINK"][pos+1]
+				#line=line[:pos]+char_map[key]+line[pos+len(key):]
+		else:
+			_,s=os.path.split(meta["FNAME"])
+			meta["SONG_LINK"]=s[:-3]+"html"
 
 def parse_doc(f):
 	inf=open(f, encoding="UTF-8")
 	lines=[x.rstrip() for x in inf.readlines()]
-	div_cnt=0
+	#there can be 2-3 sections in the provided file:
+	# the metadata information,
+	# the lyrics in one language, and (potentially)
+	# the lyrics in a second language (english)
+	#the sections are divided up by some number of '====' on their own line
 	sections=["header","lang1","lang2"]
 	section_divs=[]
+	div_cnt=0
 	section="header"
 	meta["FNAME"]=f
+	#this just goes through a finds the line numbers for the divs. For reasons, the last line needs to be pushed
+	# onto the stack as well
 	for i in range(len(lines)):
 		if "==" in lines[i]:
 			div_cnt+=1
 			section_divs.append(i)
 	section_divs.append(len(lines))
-	header=parse_header(lines[:section_divs[0]])
+	#take the section between the first div markers as the header
+	parse_header(lines[:section_divs[0]])
+	#the next section is the first set of lyrics
 	lyrics.append(lines[section_divs[0]+1:section_divs[1]])
+	#put a title line into the lyrics table
 	lyrics[0].insert(0,"<b><u>Lyrics:</u></b>")
+
+	#process the (optional) second set of lyrics, same as the first
 	if div_cnt ==2:
 		lyrics.append(lines[section_divs[1]+1:])
 		lyrics[1].insert(0,"<b><u>English Translation:</u></b>")
-		
+			
 def parse_header(lines):
+	"""
+		Take the key-value pairs from the header of the document and parse them into our dict
+	"""
 	strip=re.compile('(\w+)="(.*)"')
 	for line in lines:
+		# the metadata section is already in key-value pairs, just extract them from that format
+		# and put them into a dict
 		results=strip.search(line)
 		k=results.group(1)
 		v=convert_characters(results.group(2))
 		meta[k]=v
 	set_paths()
 	set_file_properties()
-
 
 cwd=os.getcwd()
 for file in files:

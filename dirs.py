@@ -34,6 +34,8 @@ def get_files(songs_only=False):
 				continue
 			if root==".":
 				continue
+			if "compilations" in root:
+				continue
 			path=g.splitall(root)
 			if songs_only:
 				if path[-1]==name[:name.find(".")]:
