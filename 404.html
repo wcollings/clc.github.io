@@ -10,28 +10,39 @@
 	<h1 style="text-align: center; padding-top: 50px; display: block;">Redirecting...</h1>
   <p id="demo"></p>
 	<script>
-    fetch("../dir_struct.json")
-    .then(function(response) {
-      return response.json();
-    })
-    .then(function (data) {
-      appendData(data);
-    })
-
+    function redirect()
+    {
+      //fetch("../dir_struct.json")
+      fetch("https://www.celticlyricscorner.site/json_record.json")
+      .then(function(response) {
+        return response.json();
+      })
+      .then(function (data) {
+        appendData(data);
+      })
+    }
     function appendData(data)
     {
-      var parts=window.location.href.split("/");
+      //var parts=window.location.href.split("/");
+      var parts="http://www.celticlyricscorner.net/backmoon/ship.htm".split("/");
       if (!parts[4].endsWith(".html"))
       {
         parts[4]=parts[4].concat("l");
       }
-      for (i=0; i < data[parts[3]].length; ++i)
+      //for (i=0; i < data[parts[3]].length; ++i)
+      for (i in data[parts[3]])
       {
-        console.log(data[parts[3][i]])
+        console.log(data[parts[3]][i])
         if (data[parts[3]][i].includes(parts[4]))
         {
           document.getElementById("demo").innerHTML = 
-          "I found the page under the album: " + data[parts[3]][i];
+          "I found the page under the album: " +i ;
+          parts[2]=parts[2].substr(0,parts[2].length-3)+"site"
+          p=parts[4];
+          parts[4]=i;
+          parts.push(p);
+          fullpath=parts.join('/')
+          window.location.replace(fullpath);
         }
       }
     }
