@@ -1,3 +1,6 @@
+'''
+This just runs through every file and refactors it if it's HTML
+'''
 from bs4 import BeautifulSoup as bs
 import os
 

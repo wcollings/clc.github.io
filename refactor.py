@@ -1,3 +1,7 @@
+'''
+RUn through each folder, find the album files, from there find the song files,
+restructure the directory structure so that each album is in its own directory
+'''
 import os
 import re
 import shutil

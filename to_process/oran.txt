@@ -1,0 +1,55 @@
+ARTIST="Griogair {Labhruidh}"
+ALBUM="{Dail}-Riada"
+SONG="\`Oran do'n Mhorairne"
+SONG_LINK="oran.html"
+LANGUAGE="G\`aidhlig"
+======
+E ho ro mo run am fearrann
+E ho ro mo run am fearrann
+Mo ghaol a Mhorairne bh\`oidheach
+far an robh mi \`og nam leannabh
+
+'S b\`oidheach tha d\`a thaobh Loch Suaineart
+Sr\`on an t-sithein griannach uaine,
+Laudail an Gleann 's Rathuaidhe
+Far an robh "Doctair Ruaidh" na leannabh
+
+'S 'o bh\`arr an t-Sithein chithinn c\`omhla
+Gach gleann, loch is eileanan b\`oidheach
+Beinn Shianta bhuidhe fo ne\`oinein
+Tir a' bhainne 'n fhe\`oir 's a' bhairich
+
+Nam biodh ceartas aig luchd cosnaidh
+'S gun na h-uachdarain bhith cho moideil
+'S mi nach fhagadh tir an t-Soisgeil
+airson fortan rioghachd aineoil
+
+Sorraidh bhuam thar chuan gu 'm ch\`airdean
+gu 'm luchd-d\`uthch' 's gach comunn G\`aidhlig
+'N latha chi 's nach fhaic 's gu br\`ath
+gu math sl\`an na miltean beannachd
+====
+E ho ro my love is the land
+E ho ro my love is the land
+My love is beautiful Morvern
+Where I was a young child
+
+Beautiful are the two sides of Loch Sunart
+Sunny, green Strintian,
+laudale, the Glen, and Rahoy
+where the "red-haired Doctor" was a babe
+
+From Sithean I would see together
+every glen, loch and lovely island
+Beinn Shianta yellow-coloured with daisies,
+Land of milk, of grass, of sprouting branches
+
+were there justice for workers,
+and were not the landlords so haughty,
+I should never have left the land of the gospel
+to seek my fortune in a strange country
+
+Farewell over the sea to my close ones,
+to my own people and every Gaelic group,
+whether we meet or not and forever,
+good health and a thousand blessings.
