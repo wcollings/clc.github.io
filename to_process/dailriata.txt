@@ -1,7 +1,7 @@
 ARTIST="Griogair {Labhruidh}"
 ALBUM="{Dail}-Riada"
 SONG="Dail-Riada"
-SONG_LINK="dailriada.html"
+SONG_LINK="dailriata.html"
 LANGUAGE="G\`aidhlig"
 ====
 Tha mo chridh'-sa a' seinn gu treun
@@ -17,6 +17,7 @@ Ach 's e cràidh mi – cionn-fàth mo lèiridh –
 Ged theireadh càch gur cràiteach mi;
 'S e sìol na gràisge chaidh an cur le Sasainn
 An tìr na Gàidhlig a ghleus mo strì.
+
 'S gach àit' gan tèid mi tha m' chluas ag èisteachd
 Ri luchd na Beurla 'tha fantainn ann,
 'S ged rug' mi fhìn ann an tìr tha ìosal,
@@ -44,3 +45,43 @@ Ach 's e mo dhùrachd gun dean sinn dùsgadh
 'S gun èirich suim dha ar dualchas uasal –
 'S gun gabh gu h-uaibhreach ar sliochd an stiùir!
 =======
+My heart sings out strongly
+of the beautiful land frequented by the Fingalians
+The gorgeous land from where I rose
+Land of the true highland heroes
+
+I sit hunched over, saddened and tired
+without rest or joy and my world without peace
+'Tis not death or temptation that has awoken my thoughts
+'Tis not unrequited love that has struck my heart
+But that which hurt me, the cause of my wounding -
+although most will say I am just bitter
+It is the seed of rabble that was planted from England
+into the land of the Gaelic that has stirred my fight
+
+In every place I go, my ears must listen
+to the non-Gaels who are living there,
+and although I was born near the lowlands,
+my people are from the high land of the mountains
+Land of sharp cliffs, land of lochs and trees,
+Land of heroes and clans,
+Like my mothers womb that put marrow in my bones to me,
+is the high land of the heroes to the west
+
+Although many mistreated you in times of hardship,
+and some of your young went over the seas,
+the language I love still loves protected by the waves
+of the precious islands and she is still not scarse
+But look in your vision, your young forsaking you -
+Consorting with a sworn enemy,
+like the children of Ireland, will you not rise?
+Your arms being the opinion of your people!
+
+your natives are the race which won virtue,
+who won u a reputation above all others,
+controlled by the foreigners,
+their language is driven out with foreign ways
+But my wish is that we will wake up -
+and put our backs to the new fashions;
+That respect will arise for our noble culture
+that our people will proudly take control!
