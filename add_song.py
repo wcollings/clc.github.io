@@ -89,20 +89,20 @@ def convert_characters(line):
 		UTF-8 quotation marks with standard quotation marks
 	"""
 	char_map={
-		"\\`a":"à", "\\'a":"á", "\\^a":"â",
-		"\\`A":"À", "\\'A":"Á", "\\^A":"Â",
+		"\\`a":"&agrave;", "\\'a":"&aacute;", "\\^a":"&acirc;",
+		"\\`A":"&Agrave;", "\\'A":"&Aacute;", "\\^A":"&Acirc;",
 
-		"\\`e":"è", "\\'e":"é", "\\^e":"ê",
-		"\\`E":"È", "\\'E":"É", "\\^E":"Ê",
+		"\\`e":"&egrave;", "\\'e":"&eacute;", "\\^e":"&ecirc;",
+		"\\`E":"&Egrave;", "\\'E":"&Eacute;", "\\^e":"&Ecirc;",
 
-		"\\`i":"ì", "\\'i":"í", "\\^i":"î",
-		"\\`I":"Ì", "\\'I":"Í", "\\^I":"Î",
+		"\\`i":"&igrave;", "\\'i":"&iacute;", "\\^i":"&icirc;",
+		"\\`I":"&Igrave;", "\\'I":"&Iacute;", "\\^I":"&Icirc;",
 
-		"\\`o":"ò", "\\'o":"ó", "\\^o":"ô",
-		"\\`O":"Ò", "\\'O":"Ó", "\\^O":"Ô",
+		"\\`o":"&ograve;", "\\'o":"&oacute;", "\\^o":"&ocirc;",
+		"\\`O":"&Ograve;", "\\'O":"&Oacute;", "\\^O":"&Ocirc;",
 
-		"\\`u":"ù", "\\'u":"ú", "\\^u":"û",
-		"\\`U":"Ù", "\\'U":"Ú", "\\^U":"Û",
+		"\\`u":"&ugrave;", "\\'u":"&uacute;", "\\^u":"&ucirc;",
+		"\\`U":"&Ugrave;", "\\'U":"&Uacute;", "\\^U":"&Ucirc;",
 
 		"“":"\"", "”":"\"","’":"\'"
 	}
