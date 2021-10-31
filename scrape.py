@@ -144,7 +144,7 @@ def read_artist(p):
 			name=res[0][1]
 			link=None
 		else:
-			d=int(re.findall(date,albs[i])[0][0])
+			d=int(re.findall(date,albs[i])[0])
 			name=re.findall(r'\w[\w ]+',albs[i+1].text)[0]
 			link=albs[i+1]['href']
 		data['albums'].append([d,name,link])
