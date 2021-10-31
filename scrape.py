@@ -4,7 +4,7 @@ import json
 import re
 from copy import copy
 
-ignore_folders=[".git",".idea",".vscode","__pycache__", "js"]
+ignore_folders=[".git",".idea",".vscode","__pycache__", "js", "compilations","puirt", "soundtracks","templates","to_process"]
 
 def walk(top, maxdepth):
 	dirs, nondirs = [], []
@@ -96,14 +96,18 @@ def read_song(f):
 	contents['lyrics']=parse_lyrics(t,num_langs)
 	return contents
 
-def listfind(l,elem):
-	try:
-		l.index(elem)
-	except:
-		return -1
-	return l.index(elem)
+def listfind(l,elem, start):
+	for i in range(len(l[start:])):
+		record=l[i+start]
+		if record is None:
+			record="None"
+		if elem.search(record):
+			return i+start
+	return -1
 
 def read_artist(p):
+	if not os.path.exists(p):
+		return {}
 	s=bs(open(p), 'html.parser')
 	ht=s.find(id='head_t')
 	data={}
@@ -114,7 +118,9 @@ def read_artist(p):
 	if m is not None:
 		data['members']=[]
 		m=m.find_next("td")
-		r = re.compile("\w[\w ]+")
+		data["members"]=m.text.strip()
+		'''
+		r = re.compile("\w[\w ']+")
 		for mem in m.children:
 			if mem==mem.string:
 				if mem.string=='\n':
@@ -122,6 +128,7 @@ def read_artist(p):
 				data['members'].extend(r.findall(mem))
 			else:
 				data['members'].extend(r.findall(mem.text))
+		'''
 	albs = ht.find(string=re.compile("Albums"))
 	albs = albs.find_next("td").contents
 	date=re.compile("\d{4} ?-")
@@ -130,12 +137,26 @@ def read_artist(p):
 	i=0
 	a_str = [ a.string for a in albs]
 	while i < len(albs):
-		date=re.findall(r'\d+',albs[i])[0]
-		name=re.findall(r'\w[\w ]+',albs[i+1].text)[0]
-		data['albums'].append([date,name,albs[i+1]['href']])
-		i=listfind(a_str[i:],None)+1
+		if len(a_str)==i+1 or a_str[i+1] == None:
+			p=re.compile("(\d{4}) - ([\w ]+)")
+			res=p.findall(a_str[i])
+			d=res[0][0]
+			name=res[0][1]
+			link=None
+		else:
+			d=re.findall(date,albs[i])[0]
+			name=re.findall(r'\w[\w ]+',albs[i+1].text)[0]
+			link=albs[i+1]['href']
+		data['albums'].append([d,name,link])
+		i=listfind(a_str,date, i+1)
+		if i==-1:
+			break
 		#i=a_str.find(None,i)+1
 	return data
+
+def read_album(p):
+	pass
+
 record=[]
 file=""
 ignore=False
@@ -149,7 +170,10 @@ for root,dirs,files in walk(".", 1):
 		if ignore==True:
 			continue
 		print(dir)
-		record.append(read_artist(dir+"/index.html"))
+		rec=read_artist(dir+"/index.html")
+		rec["folder"]=dir
+		record.append(rec)
+json.dump(record,open("record.json","w"), indent=3)
 '''
 of=open("chunnamise.json",'w')
 f=read_song("chunnamise.html")
