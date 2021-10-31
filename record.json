@@ -5,62 +5,62 @@
       "members": "Dermot Byrne, Ciar\u00e1n Curran, Mark Kelly, Mair\u00e9ad N\u00ed Mhaonaigh, D\u00e1ith\u00ed Sproule & Ciar\u00e1n Tourish",
       "albums": [
          [
-            "1983 -",
+            1,
             "Ceol Aduaidh",
             "ceoladuaidh/ceoladuaidh.html"
          ],
          [
-            "1987 -",
+            1,
             "Altan",
             "altan/altan.html"
          ],
          [
-            "1989 -",
+            1,
             "Horse With A Heart",
             "horseheart/horseheart.html"
          ],
          [
-            "1990 -",
+            1,
             "The Red Crow",
             "redcrow/redcrow.html"
          ],
          [
-            "1992 -",
+            1,
             "Harvest Storm",
             "harveststorm/harveststorm.html"
          ],
          [
-            "1993 -",
+            1,
             "Island Angel",
             "islandangel/islandangel.html"
          ],
          [
-            "1996 -",
+            1,
             "Blackwater",
             "blackwater/blackwater.html"
          ],
          [
-            "1997 -",
+            1,
             "The Best Of Altan",
             "best/best.html"
          ],
          [
-            "1997 -",
+            1,
             "Runaway Sunday",
             "runaway/runaway.html"
          ],
          [
-            "2000 -",
+            2,
             "Another Sky",
             "anothersky/anothersky.html"
          ],
          [
-            "2002 -",
+            2,
             "The Blue Idol",
             "blueidol/blueidol.html"
          ],
          [
-            "2005 -",
+            2,
             "Local Ground",
             "localground/localground.html"
          ]
@@ -72,7 +72,7 @@
       "artist": "Muireann Nic Amhlaoibh",
       "albums": [
          [
-            "2006 -",
+            2,
             "Daybreak",
             "daybreak/daybreak.html"
          ]
@@ -85,7 +85,7 @@
       "members": "Neil Davey, Brian \u00d3 hEadhra, Treasa Harkin & Aim\u00e9e Leonard",
       "albums": [
          [
-            "1998 -",
+            1,
             "Riptide",
             "riptide/riptide.html"
          ]
@@ -97,62 +97,62 @@
       "artist": "An\u00fana",
       "albums": [
          [
-            "1993 -",
+            1,
             "An\u00fana",
             "anuna/anuna.html"
          ],
          [
-            "1995 -",
+            1,
             "Invocation",
             "invocation/invocation.html"
          ],
          [
-            "1995 -",
+            1,
             "Omnis",
             "omnis-ie/omnis-ie.html"
          ],
          [
-            "1997 -",
+            1,
             "Omnis",
             "omnis-us/omnis-us.html"
          ],
          [
-            "1999 -",
+            1,
             "Deep Dead Blue",
             "deepdead/deepdead.html"
          ],
          [
-            "2000 -",
+            2,
             "Cynara",
             "cynara/cynara.html"
          ],
          [
-            "2002 -",
+            2,
             "An\u00fana 2002",
             "anuna2002/anuna2002.html"
          ],
          [
-            "2002 -",
+            2,
             "Invocation 2002",
             "invocation2002/invocation2002.html"
          ],
          [
-            "2002 -",
+            2,
             "Winter Songs",
             "wintersongs/wintersongs.html"
          ],
          [
-            "2003 -",
+            2,
             "Relics",
             "relics/relics.html"
          ],
          [
-            "2006 -",
+            2,
             "Sensation",
             "sensation/sensation.html"
          ],
          [
-            "2007 -",
+            2,
             "Celtic Origins",
             "celtic/celtic.html"
          ]
@@ -165,17 +165,17 @@
       "members": "Gillian Frame, Ali Hutton, Findlay Napier & Hamish Napier",
       "albums": [
          [
-            "2001 -",
+            2,
             "Back Of The Moon",
             "backmoon/backmoon.html"
          ],
          [
-            "2003 -",
+            2,
             "Fortune",
             "fortunes/fortunes.html"
          ],
          [
-            "2005 -",
+            2,
             "Luminosity",
             "luminosity/luminosity.html"
          ]
@@ -188,122 +188,122 @@
       "members": "Alan Reid, Brian McNeill, Jim Thomson, Eddie Morgan, Sandra Lang, Ricky Starrs, Jamie McMenemy, John Galahan, \n            Pat Kilbride, Jen Clark, Duncan MacGillivray, Sylvia Barnes, Ged Foley, Dougie Pincock, Alistair Russel, John \n            McCusker, Iain MacDonald, Davy Steele, Karine Polwart, Ewen Henderson, Sean O'Donnell, Alasdair White, & Mike Katz",
       "albums": [
          [
-            "1976",
+            1976,
             "Farewell to Nova Scotia",
             null
          ],
          [
-            "1977",
+            1977,
             "Battlefield Band",
             null
          ],
          [
-            "1978",
+            1978,
             "Wae",
             null
          ],
          [
-            "1978",
+            1978,
             "At the Front",
             null
          ],
          [
-            "1979",
+            1979,
             "Stand Easy",
             null
          ],
          [
-            "1980",
+            1980,
             "Home is Where the Van is",
             null
          ],
          [
-            "1982",
+            1982,
             "There",
             null
          ],
          [
-            "1984",
+            1984,
             "Anthem for the Common Man",
             null
          ],
          [
-            "1986",
+            1986,
             "On the Rise",
             null
          ],
          [
-            "1987",
+            1987,
             "Celtic Hotel",
             null
          ],
          [
-            "1991",
+            1991,
             "New Spring",
             null
          ],
          [
-            "1992",
+            1992,
             "Quiet Days",
             null
          ],
          [
-            "1995",
+            1995,
             "Threads",
             null
          ],
          [
-            "1998",
+            1998,
             "Rain",
             null
          ],
          [
-            "1999",
+            1999,
             "Leaving Friday Harbor",
             null
          ],
          [
-            "2001",
+            2001,
             "Happy Daze",
             null
          ],
          [
-            "2002",
+            2002,
             "Time and Tide",
             null
          ],
          [
-            "2004",
+            2004,
             "Out for the Night",
             null
          ],
          [
-            "2006",
+            2006,
             "The Road of Tears",
             null
          ],
          [
-            "2007",
+            2007,
             "Dookin",
             null
          ],
          [
-            "2009",
+            2009,
             "Zama Zama",
             null
          ],
          [
-            "2011 -",
+            2,
             "Line",
             "lineup/lineup.html"
          ],
          [
-            "2013",
+            2013,
             "Room Enough For All",
             null
          ],
          [
-            "2015",
+            2015,
             "Beg and Borrow",
             null
          ]
@@ -315,57 +315,57 @@
       "artist": "Mary Black",
       "albums": [
          [
-            "1982 -",
+            1,
             "Mary Black",
             "maryblack/maryblack.html"
          ],
          [
-            "1984 -",
+            1,
             "Collected",
             "collected/collected.html"
          ],
          [
-            "1985 -",
+            1,
             "Without The Fanfare",
             "without/without.html"
          ],
          [
-            "1987 -",
+            1,
             "By The Time It Gets Dark",
             "bythetime/bythetime.html"
          ],
          [
-            "1989 -",
+            1,
             "No Frontiers",
             "nofrontiers/nofrontiers.html"
          ],
          [
-            "1991 -",
+            1,
             "Babes In The Wood",
             "babes/babes.html"
          ],
          [
-            "1993 -",
+            1,
             "The Holy Ground",
             "holyground/holyground.html"
          ],
          [
-            "1996 -",
+            1,
             "Circus",
             "circus/circus.html"
          ],
          [
-            "1997 -",
+            1,
             "Shine",
             "shine/shine.html"
          ],
          [
-            "2000 -",
+            2,
             "Speaking With The Angel",
             "speaking/speaking.html"
          ],
          [
-            "2005 -",
+            2,
             "Full Tide",
             "fulltide/fulltide.html"
          ]
@@ -378,17 +378,17 @@
       "members": "Peter Brown, Kevin Burke,\n      \n       M\u00edche\u00e1l \u00d3 Domhnaill\n      \n      ,\n      \n       Tr\u00edona N\u00ed Dhomhnaill\n      \n      , Paddy Keenan, D\u00f3nal Lunny & Matt Molloy",
       "albums": [
          [
-            "1976 -",
+            1,
             "Old Hag You Have Killed Me",
             "oldhag/oldhag.html"
          ],
          [
-            "1988 -",
+            1,
             "The Best Of The Bothy Band",
             "bestof/bestof.html"
          ],
          [
-            "1996 -",
+            1,
             "Live In Concert",
             "live/live.html"
          ]
@@ -403,42 +403,42 @@
       "artist": "Moya Brennan",
       "albums": [
          [
-            "1992 -",
+            1,
             "M\u00e1ire",
             "maire/maire.html"
          ],
          [
-            "1995 -",
+            1,
             "Misty Eyed Adventures",
             "mistyeyed/mistyeyed.html"
          ],
          [
-            "1998 -",
+            1,
             "Perfect Time",
             "perfecttime/perfecttime.html"
          ],
          [
-            "1999 -",
+            1,
             "Whisper To The Wild Water",
             "whisper/whisper.html"
          ],
          [
-            "2003 -",
+            2,
             "Two Horizons",
             "twohorizons/twohorizons.html"
          ],
          [
-            "2005 -",
+            2,
             "An Irish Christmas",
             "irishchristmas/irishchristmas.html"
          ],
          [
-            "2006 -",
+            2,
             "An Irish Christmas",
             "irish/irish.html"
          ],
          [
-            "2007 -",
+            2,
             "Signature",
             "signature/signature.html"
          ]
@@ -451,82 +451,82 @@
       "members": "Che Beresford, Manus Lunny,\n      \n       Karen Matheson\n      \n      ,\n      \n       Michael McGoldrick\n      \n      , Charlie McKerron, \n        David Robertson, Donald Shaw & Ewen Vernal",
       "albums": [
          [
-            "1984 -",
+            1,
             "Cascade",
             "cascade/cascade.html"
          ],
          [
-            "1987 -",
+            1,
             "Crosswinds",
             "crosswinds/crosswinds.html"
          ],
          [
-            "1989 -",
+            1,
             "Sidewaulk",
             "sidewaulk/sidewaulk.html"
          ],
          [
-            "1991 -",
+            1,
             "Delirium",
             "delirium/delirium.html"
          ],
          [
-            "1992 -",
+            1,
             "Get Out",
             "getout/getout.html"
          ],
          [
-            "1993 -",
+            1,
             "Secret People",
             "secretpeople/secretpeople.html"
          ],
          [
-            "1994 -",
+            1,
             "C\u00e5p\u00e8r\u00e7aillie",
             "capercaillie/capercaillie.html"
          ],
          [
-            "1995 -",
+            1,
             "The Blood Is Strong",
             "bloodstrong/bloodstrong.html"
          ],
          [
-            "1997 -",
+            1,
             "To The Moon",
             "tothemoon/tothemoon.html"
          ],
          [
-            "1998 -",
+            1,
             "Glenfinnan ",
             "glenfinnan/glenfinnan.html"
          ],
          [
-            "1998 -",
+            1,
             "Beautiful Wasteland",
             "beautiful/beautiful.html"
          ],
          [
-            "1998 -",
+            1,
             "Dusk Till Dawn",
             "dusktildawn/dusktildawn.html"
          ],
          [
-            "2000 -",
+            2,
             "N\u00e0durra",
             "nadurra/nadurra.html"
          ],
          [
-            "2002 -",
+            2,
             "Live In Concert",
             "live/live.html"
          ],
          [
-            "2003 -",
+            2,
             "Choice Language",
             "choice/choice.html"
          ],
          [
-            "2008 -",
+            2,
             "Roses And Tears",
             "roses/roses.html"
          ]
@@ -538,32 +538,32 @@
       "artist": "Karan Casey",
       "albums": [
          [
-            "1997 -",
+            1,
             "Songlines",
             "songlines/songlines.html"
          ],
          [
-            "2000 -",
+            2,
             "Seal Maiden",
             "sealmaiden/sealmaiden.html"
          ],
          [
-            "2001 -",
+            2,
             "The Winds Begin To Sing",
             "winds/winds.html"
          ],
          [
-            "2003 -",
+            2,
             "Distant Shore",
             "distant/distant.html"
          ],
          [
-            "2005 -",
+            2,
             "Chasing The Sun",
             "chasing/chasing.html"
          ],
          [
-            "2008 -",
+            2,
             "Ships In The Forest",
             "ships/ships.html"
          ]
@@ -576,7 +576,7 @@
       "members": "Aongus, Ciar\u00e1n, Feargus, Fionnt\u00e1n, Odhr\u00e1n & Seathr\u00fan",
       "albums": [
          [
-            "1998 -",
+            1,
             "Singing From Memory",
             "singing/singing.html"
          ]
@@ -589,12 +589,12 @@
       "members": "Andrew Fryer & Ren\u00e9e Gray",
       "albums": [
          [
-            "1997 -",
+            1,
             "r Mabinogi",
             "ormabinogi/ormabinogi.html"
          ],
          [
-            "1999 -",
+            1,
             "The Golden Land",
             "goldenland/goldenland.html"
          ]
@@ -607,27 +607,27 @@
       "members": "Mary Coogan, Roisin Dillon, Joanie Madden, Mirella Murray & Heidi Talbot",
       "albums": [
          [
-            "1996 -",
+            1,
             "New Day Dawning",
             "newday/newday.html"
          ],
          [
-            "1998 -",
+            1,
             "Threads Of Time",
             "threadsoftime/threadsoftime.html"
          ],
          [
-            "1999 -",
+            1,
             "At Home",
             "athome/athome.html"
          ],
          [
-            "2001 -",
+            2,
             "The Girls Won",
             "girlswont/girlswont.html"
          ],
          [
-            "2005 -",
+            2,
             "Woman Of The House",
             "woman/woman.html"
          ]
@@ -639,7 +639,7 @@
       "artist": "Lasairfh\u00edona N\u00ed Chonaola",
       "albums": [
          [
-            "2002 -",
+            2,
             "An Raic\u00edn \u00c1lainn",
             "anraicin/anraicin.html"
          ]
@@ -652,92 +652,92 @@
       "members": "Ciar\u00e1n Brennan,\n      \n       M\u00e1ire Brennan\n      \n      , Noel Duggan & Padraig Duggan",
       "albums": [
          [
-            "1972 -",
+            1,
             "Clannad",
             "clannad/clannad.html"
          ],
          [
-            "1974 -",
+            1,
             "Clannad 2",
             "clannad2/clannad2.html"
          ],
          [
-            "1976 -",
+            1,
             "D\u00falam\u00e1n",
             "dulaman/dulaman.html"
          ],
          [
-            "1980 -",
+            1,
             "Crann Ull",
             "crannull/crannull.html"
          ],
          [
-            "1982 -",
+            1,
             "Fuaim",
             "fuaim/fuaim.html"
          ],
          [
-            "1984 -",
+            1,
             "Magical Ring",
             "magicalring/magicalring.html"
          ],
          [
-            "1984 -",
+            1,
             "Legend",
             "legend/legend.html"
          ],
          [
-            "1985 -",
+            1,
             "Macalla",
             "macalla/macalla.html"
          ],
          [
-            "1987 -",
+            1,
             "Clannad In Concert",
             "concert/concert.html"
          ],
          [
-            "1988 -",
+            1,
             "Sirius",
             "sirius/sirius.html"
          ],
          [
-            "1989 -",
+            1,
             "Pastpresent",
             "pastpresent/pastpresent.html"
          ],
          [
-            "1989 -",
+            1,
             "Atlantic Realm",
             "atlanticrealm/atlanticrealm.html"
          ],
          [
-            "1992 -",
+            1,
             "Anam",
             "anam/anam.html"
          ],
          [
-            "1993 -",
+            1,
             "Banba",
             "banba/banba.html"
          ],
          [
-            "1995 -",
+            1,
             "Themes",
             "themes/themes.html"
          ],
          [
-            "1995 -",
+            1,
             "Lore",
             "lore/lore.html"
          ],
          [
-            "1997 -",
+            1,
             "Landmarks",
             "landmarks/landmarks.html"
          ],
          [
-            "2005 -",
+            2,
             "Live In Concert",
             "live/live.html"
          ]
@@ -750,17 +750,17 @@
       "members": "Arthur Cormack\n      \n      , Hector Henderson, Ingrid Henderson, Mary Ann Kennedy, \n        Maggie MacDonald & Ross Martin",
       "albums": [
          [
-            "2000 -",
+            2,
             "Cliar",
             "cliar/cliar.html"
          ],
          [
-            "2002 -",
+            2,
             "Gun T\u00e0mh",
             "guntamh/guntamh.html"
          ],
          [
-            "2005 -",
+            2,
             "Grinn Grinn",
             "grinngrinn/grinngrinn.html"
          ]
@@ -772,12 +772,12 @@
       "artist": "Arthur Cormack",
       "albums": [
          [
-            "1989 -",
+            1,
             "Ruith Na Gaoith",
             "ruith/ruith.html"
          ],
          [
-            "1992 -",
+            1,
             "Nuair Bha Mi \u00d2g",
             "nuair/nuair.html"
          ]
@@ -793,27 +793,27 @@
       "members": "Muireann Nic Amhlaoibh\n      \n      , D\u00f3nal Clancy, \u00c9amonn Doorley, Tom Doorley, Donnchadh Gough, Ois\u00edn McAuley, Benny McCarthy",
       "albums": [
          [
-            "2000 -",
+            2,
             "Think Before You Think",
             "think/think.html"
          ],
          [
-            "2002 -",
+            2,
             "All Things Considered",
             "allthings/allthings.html"
          ],
          [
-            "2003 -",
+            2,
             "The Road Less Traveled",
             "road/road.html"
          ],
          [
-            "2004 -",
+            2,
             "Up In The Air",
             "upintheair/upintheair.html"
          ],
          [
-            "2005 -",
+            2,
             "When All Is Said And Done",
             "whenall/whenall.html"
          ]
@@ -825,7 +825,7 @@
       "artist": "Ashley Davis",
       "albums": [
          [
-            "2004 -",
+            2,
             "Closer To You",
             "closer/closer.html"
          ]
@@ -838,17 +838,17 @@
       "members": "Mary Dillon, Deirdre Havlin, Rosie Mulholland, Eoghan O'Brien, Kate O'Brien, Cl\u00f3dagh Warnock",
       "albums": [
          [
-            "1993 -",
+            1,
             "D\u00e9anta",
             "deanta/deanta.html"
          ],
          [
-            "1994 -",
+            1,
             "Ready For The Storm",
             "ready/ready.html"
          ],
          [
-            "1997 -",
+            1,
             "Whisper Of A Secret",
             "whisper/whisper.html"
          ]
@@ -861,22 +861,22 @@
       "members": "Michael Holmes, Cathy Jordan, Liam Kelly, Brian McDonagh, Shane Mitchell, Tom Morrow, S\u00e9amus O'Dowd",
       "albums": [
          [
-            "1996 -",
+            1,
             "Playing With Fire",
             "playing/playing.html"
          ],
          [
-            "2001 -",
+            2,
             "Midsummer",
             "midsummer/midsummer.html"
          ],
          [
-            "2002 -",
+            2,
             "Live In Palma",
             "live/live.html"
          ],
          [
-            "2004 -",
+            2,
             "Spirit",
             "spirit/spirit.html"
          ]
@@ -889,12 +889,12 @@
       "members": "Kathleen Boyle,\n      \n       Julie Fowlis\n      \n      , Carol-Anne Mackay, \n        Eilidh Macleod, Martin O'Neill, Jenna Reid",
       "albums": [
          [
-            "2002 -",
+            2,
             "D\u00f2chas",
             "dochas/dochas.html"
          ],
          [
-            "2005 -",
+            2,
             "An D\u00e0rna Umhail",
             "andarna/andarna.html"
          ]
@@ -906,27 +906,27 @@
       "artist": "Domhnaill Family",
       "albums": [
          [
-            "1975 -",
+            1,
             "Tr\u00edona",
             "triona/triona.html"
          ],
          [
-            "1976 -",
+            1,
             "Mair\u00e9ad N\u00ed Dhomhnaill",
             "mairead/mairead.html"
          ],
          [
-            "1982 -",
+            1,
             "Portland",
             "portland/portland.html"
          ],
          [
-            "1999 -",
+            1,
             "No Dowry",
             "nodowry/nodowry.html"
          ],
          [
-            "2000 -",
+            2,
             "Idir An D\u00e1 Sholas",
             "idiranda/idiranda.html"
          ]
@@ -938,47 +938,47 @@
       "artist": "Enya",
       "albums": [
          [
-            "1987 -",
+            1,
             "Enya",
             "thecelts/thecelts.html"
          ],
          [
-            "1988 -",
+            1,
             "Watermark",
             "watermark/watermark.html"
          ],
          [
-            "1991 -",
+            1,
             "Shepherd Moons",
             "shepherdmoons/shepherdmoons.html"
          ],
          [
-            "1992 -",
+            1,
             "The Celts",
             "thecelts/thecelts.html"
          ],
          [
-            "1995 -",
+            1,
             "The Memory Of Trees",
             "memory/memory.html"
          ],
          [
-            "1997 -",
+            1,
             "Paint The Sky With Stars",
             "paintsky/paintsky.html"
          ],
          [
-            "2000 -",
+            2,
             "A Day Without Rain",
             "daywithout/daywithout.html"
          ],
          [
-            "2005 -",
+            2,
             "Amarantine",
             "amarantine/amarantine.html"
          ],
          [
-            "2008 -",
+            2,
             "And Winter Came",
             "andwinter/andwinter.html"
          ]
@@ -990,7 +990,7 @@
       "artist": "\u00d3rla Fallon",
       "albums": [
          [
-            "2005 -",
+            2,
             "The Water Is Wide",
             "wateriswide/wateriswide.html"
          ]
@@ -1002,12 +1002,12 @@
       "artist": "Aoife Ferry",
       "albums": [
          [
-            "1996 -",
+            1,
             "Aoife",
             "aoife/aoife.html"
          ],
          [
-            "2002 -",
+            2,
             "The Turning Of The Tide",
             "turning/turning.html"
          ]
@@ -1019,12 +1019,12 @@
       "artist": "Julie Fowlis",
       "albums": [
          [
-            "2005 -",
+            2,
             "Mar A Tha Mo Chridhe",
             "maratha/maratha.html"
          ],
          [
-            "2007 -",
+            2,
             "Cuilidh",
             "cuilidh/cuilidh.html"
          ]
@@ -1037,17 +1037,17 @@
       "members": "Alan Doherty, Colin Farrell, Nicola Joyce, Andrew Laking & Gerry Paul",
       "albums": [
          [
-            "2004 -",
+            2,
             "Endeavour",
             "endeavour/endeavour.html"
          ],
          [
-            "2004 -",
+            2,
             "The Landing Step",
             "landingstep/landingstep.html"
          ],
          [
-            "2007 -",
+            2,
             "Cloudy Day Navigation",
             "cloudyday/cloudyday.html"
          ]
@@ -1059,7 +1059,7 @@
       "artist": "James Graham",
       "albums": [
          [
-            "2004 -",
+            2,
             "Siubhal",
             "siubhal/siubhal.html"
          ]
@@ -1072,12 +1072,12 @@
       "members": "Dave Bainbridge, Phil Barker, Troy Donockley, Joanne Hogg & Frank van Essen",
       "albums": [
          [
-            "1995 -",
+            1,
             "Journey Into The Morn",
             "journey/journey.html"
          ],
          [
-            "2000 -",
+            2,
             "Open Sky",
             "opensky/opensky.html"
          ]
@@ -1089,7 +1089,7 @@
       "artist": "Lisa Kelly",
       "albums": [
          [
-            "2005 -",
+            2,
             "Lisa",
             "lisa/lisa.html"
          ]
@@ -1101,7 +1101,7 @@
       "artist": "Nuala Kennedy",
       "albums": [
          [
-            "2007 -",
+            2,
             "New Shoes",
             "newshoes/newshoes.html"
          ]
@@ -1114,17 +1114,17 @@
       "members": "Dee Armstrong, Eoin Dillon, Brian Hogan, Lance Hogan, Colm \u00d3 Snodaigh, R\u00f3n\u00e1n \u00d3 Snodaigh & Rossa \u00d3 Snodaigh",
       "albums": [
          [
-            "1997 -",
+            1,
             "T\u00f3g \u00c9 Go Bog \u00c9",
             "togegoboge/togegoboge.html"
          ],
          [
-            "2000 -",
+            2,
             "Lemonade ",
             "lemonade/lemonade.html"
          ],
          [
-            "2003 -",
+            2,
             "Luna Park",
             "lunapark/lunapark.html"
          ]
@@ -1136,7 +1136,7 @@
       "artist": "Griogair Labhruidh ",
       "albums": [
          [
-            "2007 -",
+            2,
             "Dail",
             "dail/dail.html"
          ]
@@ -1148,27 +1148,27 @@
       "artist": "Mary Jane Lamond",
       "albums": [
          [
-            "1996 -",
+            1,
             "Bho Th\u00ecr Nan Craobh",
             "bhothir/bhothir.html"
          ],
          [
-            "1997 -",
+            1,
             "Suas E",
             "suase/suase.html"
          ],
          [
-            "1999 -",
+            1,
             "L\u00e0n D\u00f9il",
             "landuil/landuil.html"
          ],
          [
-            "2000 -",
+            2,
             "\u00d2rain Gh\u00e0idhlig",
             "orainghaidhlig/orainghaidhlig.html"
          ],
          [
-            "2005 -",
+            2,
             "St\u00f2ras",
             "storas/storas.html"
          ]
@@ -1180,12 +1180,12 @@
       "artist": "Ishbel MacAskill",
       "albums": [
          [
-            "1994 -",
+            1,
             "S\u00ecoda",
             "sioda/sioda.html"
          ],
          [
-            "2000 -",
+            2,
             "Essentially Ishbel",
             "essentially/essentially.html"
          ]
@@ -1197,22 +1197,22 @@
       "artist": "Mairi MacInnes",
       "albums": [
          [
-            "1989 -",
+            1,
             "Causeway",
             "causeway/causeway.html"
          ],
          [
-            "1995 -",
+            1,
             "This Feeling Inside",
             "feeling/feeling.html"
          ],
          [
-            "2001 -",
+            2,
             "Orosay",
             "orosay/orosay.html"
          ],
          [
-            "2002 -",
+            2,
             "Tickettyboo",
             "tickettyboo/tickettyboo.html"
          ]
@@ -1224,7 +1224,7 @@
       "artist": "Kathleen MacInnes",
       "albums": [
          [
-            "2006 -",
+            2,
             "\u00d2g",
             "ogmhadainn/ogmhadainn.html"
          ]
@@ -1237,17 +1237,17 @@
       "members": "Eilidh Mackenzie\n      \n      , Fiona Mackenzie, Gillian Mackenzie",
       "albums": [
          [
-            "1997 -",
+            1,
             "Camhanach",
             "camhanach/camhanach.html"
          ],
          [
-            "2001 -",
+            2,
             "Notes From A Hebridean Island",
             "notes/notes.html"
          ],
          [
-            "2002 -",
+            2,
             "Fama Clamosa",
             "fama/fama.html"
          ]
@@ -1259,7 +1259,7 @@
       "artist": "Eilidh Mackenzie",
       "albums": [
          [
-            "1992 -",
+            1,
             "Eideadh Na Sgeulachd",
             "eideadh/eideadh.html"
          ]
@@ -1271,7 +1271,7 @@
       "artist": "Fiona Mackenzie",
       "albums": [
          [
-            "2003 -",
+            2,
             "Seinn",
             "seinn/seinn.html"
          ]
@@ -1283,12 +1283,12 @@
       "artist": "Talitha MacKenzie",
       "albums": [
          [
-            "1994 -",
+            1,
             "S\u00f3las",
             "solas/solas.html"
          ],
          [
-            "1996 -",
+            1,
             "Spiorad",
             "spiorad/spiorad.html"
          ]
@@ -1300,7 +1300,7 @@
       "artist": "Calum Alex MacMillan",
       "albums": [
          [
-            "2005 -",
+            2,
             "T\u00e0ladh Nan Cuantan",
             "taladh/taladh.html"
          ]
@@ -1312,12 +1312,12 @@
       "artist": "Flora MacNeil",
       "albums": [
          [
-            "1994 -",
+            1,
             "Craobh Nan Ubhal",
             "craobh/craobh.html"
          ],
          [
-            "2000 -",
+            2,
             "Orain Floraidh",
             "orain/orain.html"
          ]
@@ -1330,7 +1330,7 @@
       "members": "Blair Douglas,\n      \n       Arthur Cormack\n      \n      , Alison Kinnaird,\n      \n       Eilidh MacKenzie\n      \n      & Christine Primrose",
       "albums": [
          [
-            "1994 -",
+            1,
             "Mairidh Gaol Is Ceol",
             "mairidh/mairidh.html"
          ]
@@ -1342,22 +1342,22 @@
       "artist": "Maggie MacInnes",
       "albums": [
          [
-            "1984 -",
+            1,
             "Cairistiona",
             "cairistiona/cairistiona.html"
          ],
          [
-            "1998 -",
+            1,
             "Eilean Mara",
             "eilean/eilean.html"
          ],
          [
-            "2001 -",
+            2,
             "Spiorad Beatha",
             "spiorad/spiorad.html"
          ],
          [
-            "2004 -",
+            2,
             "Peaceful Ground",
             "peaceful/peaceful.html"
          ]
@@ -1370,32 +1370,32 @@
       "members": "Steve Byrne, Mark Dunlop, Fiona Hunter, Mike Vass & Dave Wood",
       "albums": [
          [
-            "2000 -",
+            2,
             "Last Leaves",
             "last/last.html"
          ],
          [
-            "2002 -",
+            2,
             "3 Ravens",
             "ravens/ravens.html"
          ],
          [
-            "2005 -",
+            2,
             "The Unseen Hours",
             "unseen/unseen.html"
          ],
          [
-            "2008 -",
+            2,
             "Flower ",
             "flower/flower.html"
          ],
          [
-            "2015 -",
+            2,
             "Far Better Days",
             "farbetter/farbetter.html"
          ],
          [
-            "2019 -",
+            2,
             "Handsel",
             "handsel/handsel.html"
          ]
@@ -1410,17 +1410,17 @@
       "artist": "Karen Matheson",
       "albums": [
          [
-            "1996 -",
+            1,
             "The Dreaming Sea",
             "dreaming/dreaming.html"
          ],
          [
-            "2002 -",
+            2,
             "Time To Fall",
             "timetofall/timetofall.html"
          ],
          [
-            "2006 -",
+            2,
             "Downriver",
             "downriver/downriver.html"
          ]
@@ -1432,7 +1432,7 @@
       "artist": "Alyth McCormack",
       "albums": [
          [
-            "2001 -",
+            2,
             "An Iomall",
             "aniomall/aniomall.html"
          ]
@@ -1444,7 +1444,7 @@
       "artist": "John Mc Glynn",
       "albums": [
          [
-            "2000 -",
+            2,
             "Songs For A Fallen Angel",
             "songs/songs.html"
          ]
@@ -1456,12 +1456,12 @@
       "artist": "Michael McGoldrick",
       "albums": [
          [
-            "2000 -",
+            2,
             "Fused",
             "fused/fused.html"
          ],
          [
-            "2002 -",
+            2,
             "At First Light",
             "atfirst/atfirst.html"
          ]
@@ -1473,52 +1473,52 @@
       "artist": "Loreena McKennitt",
       "albums": [
          [
-            "1985 -",
+            1,
             "Elemental",
             "elemental/elemental.html"
          ],
          [
-            "1987 -",
+            1,
             "To Drive The Cold Winter Away",
             "todrive/todrive.html"
          ],
          [
-            "1989 -",
+            1,
             "Parallel Dreams",
             "parallel/parallel.html"
          ],
          [
-            "1991 -",
+            1,
             "The Visit",
             "visit/visit.html"
          ],
          [
-            "1994 -",
+            1,
             "The Mask And Mirror",
             "maskmirror/maskmirror.html"
          ],
          [
-            "1995 -",
+            1,
             "A Winter Garden",
             "wintergarden/wintergarden.html"
          ],
          [
-            "1997 -",
+            1,
             "The Book Of Secrets",
             "booksecrets/booksecrets.html"
          ],
          [
-            "1999 -",
+            1,
             "Live In Paris And Toronto",
             "live/live.html"
          ],
          [
-            "2006 -",
+            2,
             "An Ancient Muse",
             "ancient/ancient.html"
          ],
          [
-            "2008 -",
+            2,
             "A Midwinter Night",
             "midwinter/midwinter.html"
          ]
@@ -1530,17 +1530,17 @@
       "artist": "Katie McMahon",
       "albums": [
          [
-            "1998 -",
+            1,
             "After The Morning",
             "aftermorning/aftermorning.html"
          ],
          [
-            "2001 -",
+            2,
             "Shine",
             "shine/shine.html"
          ],
          [
-            "2003 -",
+            2,
             "Celtic Christmas",
             "celtic/celtic.html"
          ]
@@ -1552,17 +1552,17 @@
       "artist": "M\u00e9av N\u00ed Mhaolchatha",
       "albums": [
          [
-            "1998 -",
+            1,
             "M\u00e9av",
             "meav/meav.html"
          ],
          [
-            "2002 -",
+            2,
             "Silver Sea",
             "silver/silver.html"
          ],
          [
-            "2005 -",
+            2,
             "A Celtic Journey",
             "celticjourney/celticjourney.html"
          ]
@@ -1575,27 +1575,27 @@
       "members": "Martin Furey, Kaela Rowan & Martin Swan",
       "albums": [
          [
-            "1991 -",
+            1,
             "Mouth Music",
             "mouthmusic/mouthmusic.html"
          ],
          [
-            "1992 -",
+            1,
             "Blue Door Green Sea",
             "bluedoor/bluedoor.html"
          ],
          [
-            "1993 -",
+            1,
             "Mo",
             "modi/modi.html"
          ],
          [
-            "1995 -",
+            1,
             "Shorelife",
             "shorelife/shorelife.html"
          ],
          [
-            "2001 -",
+            2,
             "Seafaring Man",
             "seafaringman/seafaringman.html"
          ]
@@ -1607,17 +1607,17 @@
       "artist": "Anna Murray",
       "albums": [
          [
-            "1994 -",
+            1,
             "Out Of The Blue",
             "outoftheblue/outoftheblue.html"
          ],
          [
-            "1996 -",
+            1,
             "Into Indigo",
             "intoindigo/intoindigo.html"
          ],
          [
-            "1999 -",
+            1,
             "Tr\u00ec Nithean",
             "trinithean/trinithean.html"
          ]
@@ -1630,22 +1630,22 @@
       "members": "Johnny Cunningham,\n      \n       Tr\u00edona N\u00ed Dhomhnaill\n      \n      ,\n      \n       M\u00edche\u00e1l \u00d3 Domhnaill\n      \n      , Brian Dunning",
       "albums": [
          [
-            "1987 -",
+            1,
             "Something Of Time",
             "something/something.html"
          ],
          [
-            "1988 -",
+            1,
             "At The End Of The Evening",
             "attheend/attheend.html"
          ],
          [
-            "1993 -",
+            1,
             "Shadow Of Time",
             "shadow/shadow.html"
          ],
          [
-            "1993 -",
+            1,
             "The White Horse Sessions",
             "whitehorse/whitehorse.html"
          ]
@@ -1658,12 +1658,12 @@
       "members": "Kerstin Blodig, M\u00e1ire Breatnach, Noel Duggan, P\u00e1draig Duggan, Thomas Loefke & Ian Melrose",
       "albums": [
          [
-            "1994 -",
+            1,
             "Norland Wind",
             "norlandwind/norlandwind.html"
          ],
          [
-            "2002 -",
+            2,
             "Atlantic Driftwood",
             "atlantic/atlantic.html"
          ]
@@ -1676,57 +1676,57 @@
       "members": "Rory Campbell, Aaron Jones, Jonny Hardie & Fraser Stone",
       "albums": [
          [
-            "1992 -",
+            1,
             "New Tricks",
             "newtricks/newtricks.html"
          ],
          [
-            "1993 -",
+            1,
             "Close To The Bone",
             "close/close.html"
          ],
          [
-            "1994 -",
+            1,
             "Tall Tails",
             "talltails/talltails.html"
          ],
          [
-            "1995 -",
+            1,
             "Legacy",
             "legacy/legacy.html"
          ],
          [
-            "1997 -",
+            1,
             "Five",
             "five/five.html"
          ],
          [
-            "1999 -",
+            1,
             "Live",
             "live/live.html"
          ],
          [
-            "1999 -",
+            1,
             "The World",
             "worlds/worlds.html"
          ],
          [
-            "2001 -",
+            2,
             "Fit",
             "fit/fit.html"
          ],
          [
-            "2003 -",
+            2,
             "The Gab O Mey",
             "gabomey/gabomey.html"
          ],
          [
-            "2005 -",
+            2,
             "Play Live",
             "playlive/playlive.html"
          ],
          [
-            "2007 -",
+            2,
             "Four On The Floor",
             "four/four.html"
          ]
@@ -1738,22 +1738,22 @@
       "artist": "Karine Polwart",
       "albums": [
          [
-            "2003 -",
+            2,
             "Faultlines",
             "faultlines/faultlines.html"
          ],
          [
-            "2006 -",
+            2,
             "Scribbled In Chalk",
             "scribbled/scribbled.html"
          ],
          [
-            "2007 -",
+            2,
             "Fairest Floo",
             "fairest/fairest.html"
          ],
          [
-            "2008 -",
+            2,
             "This Earthly Spell",
             "this/this.html"
          ]
@@ -1766,7 +1766,7 @@
       "members": "Luke Daniels, \u00c9il\u00eds Egan, M\u00e1ir\u00edn Fahy, Yvonne Fahy, John Flatley & Chris Kelly",
       "albums": [
          [
-            "1998 -",
+            1,
             "Live It Up",
             "liveitup/liveitup.html"
          ]
@@ -1779,12 +1779,12 @@
       "members": "Johnny Cunningham, Phil Cunningham,\n      \n       Tr\u00edona N\u00ed Dhomhnaill\n      \n      ,\n      \n       M\u00edche\u00e1l \u00d3 Domhnaill",
       "albums": [
          [
-            "1986 -",
+            1,
             "Relativity",
             "relativity/relativity.html"
          ],
          [
-            "1987 -",
+            1,
             "Gathering Pace",
             "gathering/gathering.html"
          ]
@@ -1796,22 +1796,22 @@
       "artist": "Cathie Ryan",
       "albums": [
          [
-            "1997 -",
+            1,
             "Cathie Ryan",
             "cathieryan/cathieryan.html"
          ],
          [
-            "1998 -",
+            1,
             "The Music Of What Happens",
             "music/music.html"
          ],
          [
-            "2001 -",
+            2,
             "Somewhere Along The Road",
             "somewhere/somewhere.html"
          ],
          [
-            "2005 -",
+            2,
             "The Farthest Wave",
             "farthest/farthest.html"
          ]
@@ -1824,32 +1824,32 @@
       "members": "Rolf Lovland & Fionnuala Sherry",
       "albums": [
          [
-            "1996 -",
+            1,
             "Songs From A Secret Garden",
             "secretgarden/secretgarden.html"
          ],
          [
-            "1997 -",
+            1,
             "White Stones",
             "whitestones/whitestones.html"
          ],
          [
-            "1999 -",
+            1,
             "Dawn Of A New Century",
             "doanc/doanc.html"
          ],
          [
-            "2001 -",
+            2,
             "Dreamcatcher",
             "dreamcatcher/dreamcatcher.html"
          ],
          [
-            "2002 -",
+            2,
             "Once In A Red Moon",
             "oiarm/oiarm.html"
          ],
          [
-            "2005 -",
+            2,
             "Earthsongs",
             "earthsongs/earthsongs.html"
          ]
@@ -1862,7 +1862,7 @@
       "members": "Duncan Chisholm, Kris Drever, Tim Edey, Gordon Gunn, Brian McAlpine, Charlie McKerron & Adam Sutherland",
       "albums": [
          [
-            "2003 -",
+            2,
             "What Road",
             "whatroad/whatroad.html"
          ]
@@ -1875,7 +1875,7 @@
       "members": "Corrina Hewat, Mary MacMaster &\n      \n       Alyth McCormack",
       "albums": [
          [
-            "2002 -",
+            2,
             "Sugarcane",
             "sugarcane/sugarcane.html"
          ]
@@ -1888,22 +1888,22 @@
       "members": "Patsy Seddon & Mary Macmaster",
       "albums": [
          [
-            "1987 -",
+            1,
             "Delighted With Harps",
             "delighted/delighted.html"
          ],
          [
-            "1988 -",
+            1,
             "Beating Harps",
             "beating/beating.html"
          ],
          [
-            "1990 -",
+            1,
             "Harpbreakers",
             "harpbreakers/harpbreakers.html"
          ],
          [
-            "1999 -",
+            1,
             "Play On Light",
             "playonlight/playonlight.html"
          ]
@@ -1916,42 +1916,42 @@
       "members": "S\u00e9amus Egan, Winifred Horan, Mick McAuley, Eamon McElholm & Deirdre Scanlan",
       "albums": [
          [
-            "1996 -",
+            1,
             "Solas",
             "solas/solas.html"
          ],
          [
-            "1997 -",
+            1,
             "Sunny Spells And Scattered Showers",
             "sunny/sunny.html"
          ],
          [
-            "1998 -",
+            1,
             "The Words That Remain",
             "thewords/thewords.html"
          ],
          [
-            "2000 -",
+            2,
             "The Hour Before Dawn",
             "thehour/thehour.html"
          ],
          [
-            "2002 -",
+            2,
             "The Edge Of Silence",
             "theedge/theedge.html"
          ],
          [
-            "2003 -",
+            2,
             "Another Day",
             "another/another.html"
          ],
          [
-            "2005 -",
+            2,
             "Waiting For An Echo",
             "waiting/waiting.html"
          ],
          [
-            "2008",
+            2008,
             "For Love And Laughter",
             null
          ]
@@ -1963,12 +1963,12 @@
       "artist": "Margaret Stewart",
       "albums": [
          [
-            "1998 -",
+            1,
             "Fhuair Mi Pog",
             "fhuair/fhuair.html"
          ],
          [
-            "2001 -",
+            2,
             "Colla Mo R\u00f9n",
             "colla/colla.html"
          ]
@@ -1981,47 +1981,47 @@
       "members": "Roy Gullane, John Martin, Colin Melville, Phil Smillie & Les Wilson",
       "albums": [
          [
-            "1985 -",
+            1,
             "Land Of Light",
             "landoflight/landoflight.html"
          ],
          [
-            "1987 -",
+            1,
             "Dancing Feet",
             "dancingfeet/dancingfeet.html"
          ],
          [
-            "1990 -",
+            1,
             "Cullen Bay",
             "cullenbay/cullenbay.html"
          ],
          [
-            "1994 -",
+            1,
             "Capernaum",
             "capernaum/capernaum.html"
          ],
          [
-            "1996 -",
+            1,
             "Leaving St",
             "leaving/leaving.html"
          ],
          [
-            "1998 -",
+            1,
             "Epona",
             "epona/epona.html"
          ],
          [
-            "2000 -",
+            2,
             "Alchemy",
             "alchemy/alchemy.html"
          ],
          [
-            "2003 -",
+            2,
             "Arnish Light",
             "arnishlight/arnishlight.html"
          ],
          [
-            "2007 -",
+            2,
             "Live ",
             "liveandinsession/liveandinsession.html"
          ]
@@ -2034,17 +2034,17 @@
       "members": "Amy Geddes, Sandra MacKay, David Scott & Derek Starr",
       "albums": [
          [
-            "1994 -",
+            1,
             "Oighreachd",
             "oighreachd/oighreachd.html"
          ],
          [
-            "1995 -",
+            1,
             "R\u00f9",
             "rura/rura.html"
          ],
          [
-            "1999 -",
+            1,
             "Suilean Dubh",
             "suilean/suilean.html"
          ]
@@ -2057,17 +2057,17 @@
       "members": "John Blake, Paul Finn, Ois\u00edn Mac Diarmada, Se\u00e1n McElwain & Tristan Rosenstock",
       "albums": [
          [
-            "2003 -",
+            2,
             "T\u00e9ada",
             "teada/teada.html"
          ],
          [
-            "2004 -",
+            2,
             "Give Us A Penny And Let Us Be Gone",
             "giveus/giveus.html"
          ],
          [
-            "2006 -",
+            2,
             "Inn\u00e9 Am\u00e1rach",
             "inne/inne.html"
          ]
@@ -2080,7 +2080,7 @@
       "members": "P\u00f3l Brennan, Guo Yue & Joji Hirota",
       "albums": [
          [
-            "1992 -",
+            1,
             "Tr\u00edsan",
             "trisan/trisan.html"
          ]
@@ -2092,12 +2092,12 @@
       "artist": "Rachel Walker",
       "albums": [
          [
-            "2004 -",
+            2,
             "Br\u00e0ighe Loch Iall",
             "braighe/braighe.html"
          ],
          [
-            "2006 -",
+            2,
             "Fon Reul",
             "fonreul/fonreul.html"
          ]
@@ -2110,12 +2110,12 @@
       "members": "Peter Anderson, Annaliese Dagg, Stuart Eydmann, Mark Hayward, Eddie McGuire, Judith Peacock & Rab Wallace",
       "albums": [
          [
-            "1991 -",
+            1,
             "Inner Sound",
             "innersound/innersound.html"
          ],
          [
-            "1999 -",
+            1,
             "Timber Timbre",
             "timber/timber.html"
          ]

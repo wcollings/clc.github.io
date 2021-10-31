@@ -131,7 +131,7 @@ def read_artist(p):
 		'''
 	albs = ht.find(string=re.compile("Albums"))
 	albs = albs.find_next("td").contents
-	date=re.compile("\d{4} ?-")
+	date=re.compile("(\d{4}) ?-")
 	data['albums']=[]
 	#albs=[[j for j in i.stripped_strings] for i in albs]
 	i=0
@@ -140,11 +140,11 @@ def read_artist(p):
 		if len(a_str)==i+1 or a_str[i+1] == None:
 			p=re.compile("(\d{4}) - ([\w ]+)")
 			res=p.findall(a_str[i])
-			d=res[0][0]
+			d=int(res[0][0])
 			name=res[0][1]
 			link=None
 		else:
-			d=re.findall(date,albs[i])[0]
+			d=int(re.findall(date,albs[i])[0][0])
 			name=re.findall(r'\w[\w ]+',albs[i+1].text)[0]
 			link=albs[i+1]['href']
 		data['albums'].append([d,name,link])
