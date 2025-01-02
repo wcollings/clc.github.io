@@ -16,11 +16,11 @@
     Artists &amp; Groups
    </a>
    &gt;
-   <a href="../../../index.html">
+   <a href="../index.html">
     Altan
    </a>
    &gt;
-   <a href="redcrow.html">
+   <a href="index.html" id="album">
     The Red Crow
    </a>
    &gt; The Flower Of Magherally
@@ -38,7 +38,7 @@
      </tr>
      <tr>
       <td id="lc">
-       <img alt="The Red Crow" src="redcrow.jpg"/>
+       <img alt="The Red Crow" src="redcrow.jpg" id="art"/>
       </td>
       <td>
        The Flower Of Magherally
@@ -83,11 +83,11 @@
        </b>
       </td>
       <td>
-       <a href="redcrow.html">
+       <a href="index.html">
         The Red Crow
        </a>
        ;
-       <a href="best.html">
+       <a href="../best/index.html">
         The Best Of Altan
        </a>
       </td>
@@ -132,7 +132,7 @@
       </td>
       <td>
        "
-       <a href="../anuna/flower.html">
+       <a href="../../anuna//omnis-ie/flower.html">
         The Flower Of Maherally
        </a>
        " on An&uacute;na's album Omnis
@@ -195,6 +195,30 @@
   </p>
   <cleaned>
   </cleaned>
+  <script type="module">
+    import data from '../album_map.json' assert {type:'json'};
+    const params = new URLSearchParams(window.location.search);
+    if (params.has("album")) {
+        var link_map = data;
+        var album=params.get("album")
+        var inpage=document.querySelector("#album")
+        var alb_art = document.querySelector("#art")
+        console.log("album art tag:")
+        console.log(alb_art)
+        console.log("inpage:")
+        console.log(inpage)
+        console.log("album from URL:")
+        console.log(album)
+        console.log("link_map:")
+        console.log(link_map)
+        console.log("Coming from '" + `${album}`  + "'")
+        var link=link_map[album]
+        inpage.textContent=album
+        inpage.href="../" + `${link}` + "/index.html";
+        alb_art.src="../" + `${link}` + "/" + `${link}` + '.jpg';
+
+    }
+</script>
  </body>
  <!-- Mirrored from www.celticlyricscorner.net/altan/flower.htm by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 01 Mar 2021 20:06:14 GMT -->
 </html>

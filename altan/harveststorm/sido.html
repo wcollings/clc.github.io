@@ -16,11 +16,11 @@
     Artists &amp; Groups
    </a>
    &gt;
-   <a href="../../../index.html">
+   <a href="../index.html">
     Altan
    </a>
    &gt;
-   <a href="harveststorm.html">
+   <a href="index.html" id="album">
     Harvest Storm
    </a>
    &gt; 'S&iacute; Do Mhaimeo &Iacute;
@@ -38,7 +38,7 @@
      </tr>
      <tr>
       <td id="lc">
-       <img alt="Harvest Storm" src="harveststorm.jpg"/>
+       <img alt="Harvest Storm" src="harveststorm.jpg" id="art"/>
       </td>
       <td>
        'S&iacute; Do Mhaimeo &Iacute;
@@ -83,11 +83,11 @@
        </b>
       </td>
       <td>
-       <a href="harveststorm.html">
+       <a href="index.html">
         Harvest Storm
        </a>
        ;
-       <a href="best.html">
+       <a href="../best/index.html">
         The Best Of Altan
        </a>
        ;
@@ -137,25 +137,25 @@
       </td>
       <td>
        "
-       <a href="../anuna/sido.html">
+       <a href="../../anuna/anuna/sido.html">
         S&iacute; Do Mhaimeo &Iacute;
        </a>
        " on An&uacute;na's album An&uacute;na
        <br/>
        "
-       <a href="../soundtracks/sido.html">
+       <a href="../../soundtracks/sido.html">
         S&iacute; Do Mhaimeo &Iacute;
        </a>
        " on the Celtic Woman soundtrack
        <br/>
        "
-       <a href="../cliar/cailleach.html">
+       <a href="../../cliar/guntamh/cailleach.html">
         Cailleach An Airgid
        </a>
        " on Cliar's album Gun T&agrave;mh
        <br/>
        "
-       <a href="../meav/sido.html">
+       <a href="../../meav//meav/sido.html">
         S&iacute; Do Mhaime&oacute; &Iacute;
        </a>
        " on M&eacute;av N&iacute; Mhaolchatha's album M&eacute;av
@@ -418,6 +418,30 @@
   </div>
   <cleaned>
   </cleaned>
+  <script type="module">
+    import data from '../album_map.json' assert {type:'json'};
+    const params = new URLSearchParams(window.location.search);
+    if (params.has("album")) {
+        var link_map = data;
+        var album=params.get("album")
+        var inpage=document.querySelector("#album")
+        var alb_art = document.querySelector("#art")
+        console.log("album art tag:")
+        console.log(alb_art)
+        console.log("inpage:")
+        console.log(inpage)
+        console.log("album from URL:")
+        console.log(album)
+        console.log("link_map:")
+        console.log(link_map)
+        console.log("Coming from '" + `${album}`  + "'")
+        var link=link_map[album]
+        inpage.textContent=album
+        inpage.href="../" + `${link}` + "/index.html";
+        alb_art.src="../" + `${link}` + "/" + `${link}` + '.jpg';
+
+    }
+</script>
  </body>
  <!-- Mirrored from www.celticlyricscorner.net/altan/sido.htm by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 01 Mar 2021 20:05:41 GMT -->
 </html>
