@@ -6,6 +6,34 @@ import re
 import dirs
 import sys
 
+"""
+This module takes a song file in the "to_process" folder and converts it to HTML, and moves it to the right folder.
+Add accents to characters via the LaTeX equivalent command - e.g. \\`o -> ò or \\'e -> é
+You can also directly add HTML wherever you want, if it's important
+Section dividers are strings of three or more equals signs
+
+The header looks like:
+
+ARTIST=""
+ALBUM=""
+SONG=""
+CREDITS=""
+LANGUAGE=""
+
+For each string here, if its one word then its fine to put it as that.
+If its more than one word, and you want to call out which word to file it under, use curly braces around that
+(e.g. SONG="The {Braes} o' Broo" will be saved to a file called Braes.html)
+If you want to save it to a specific file not in the name explitly, use the extra word "link" at the end
+(e.g. SONG="My Song"\nSONGLINK="My_Song" -> My_song.html)
+This also works for ARTIST and ALBUM, in the same way
+
+If there is more than one language, i.e. the song is in not-english and you want to add a translation, provide a second section divider and put the English directly after that.
+NOTE that the two language parts need to have IDENTICAL line breaks.
+It's also recommended to put:
+	<u>Chorus:</u>
+markers in, of course in the other language as well, and making sure they line up together
+
+"""
 
 files=os.listdir("to_process")
 meta={}
@@ -133,7 +161,7 @@ def add_lyrics(line):
 	if len(lyrics)==1:
 		for line in lyrics[0][1:]:
 			make_row([line])
-		return
+		return "".join(doc.getvalue())
 
 	# if they're the same length, there's not a weird edge case to deal with
 	if len(lyrics[0])==len(lyrics[1]):
@@ -305,7 +333,7 @@ def parse_header(lines):
 	"""
 		Take the key-value pairs from the header of the document and parse them into our dict
 	"""
-	strip=re.compile('(\w+)="(.*)"')
+	strip=re.compile(r'(\w+)="(.*)"')
 	for line in lines:
 		# the metadata section is already in key-value pairs, just extract them from that format
 		# and put them into a dict
@@ -323,5 +351,5 @@ for file in files:
 	lyrics=[]
 	meta={}
 	doc,tag,text=Doc().tagtext()
-	#os.remove(reduce(os.path.join,[cwd,"to_process",file]))
+	os.remove(reduce(os.path.join,[cwd,"to_process",file]))
 	meta={}

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title id="tabname">
+   Manran - L&agrave; Inbhir Lochaidh
+  </title>
+  <link href="../style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <p>
+   <a href="../index.html">
+    Celtic Lyrics Corner
+   </a>
+   &gt;
+   <a href="../artists.html">
+    Artists
+   </a>
+   &gt;
+   <a href="../index.html" id="artist">
+    Artist
+   </a>
+   &gt;
+   <a href="lochaidh" id="album">
+    Album
+   </a>
+   &gt;
+   <u id="title">
+    Track name
+   </u>
+   <br/>
+   <div align="center">
+    <table id="head_t">
+     <tr>
+      <td id="lc">
+       <img id="alb_cover" src="lochaidh.jpg" width="100"/>
+      </td>
+      <td>
+       <h3 id="title">
+       </h3>
+      </td>
+     </tr>
+     <tr>
+      <td id="lc">
+       <u>
+        <b>
+         Credits
+        </b>
+        :
+       </u>
+      </td>
+      <td id="credits">
+      </td>
+     </tr>
+     <tr>
+      <td id="lc">
+       <u>
+        <b>
+         Appears On
+        </b>
+        :
+       </u>
+      </td>
+      <td id="album">
+       L&agrave; Inbhir Lochaidh
+      </td>
+     </tr>
+     <tr>
+      <td id="lc">
+       <u>
+        <b>
+         Language
+        </b>
+        :
+       </u>
+      </td>
+      <td id="language">
+       Scottish Gaelic
+      </td>
+     </tr>
+    </table>
+   </div>
+   <table id="lyrics">
+    <tr>
+     <td>
+      <b>
+       <u>
+        Lyrics:
+       </u>
+      </b>
+     </td>
+     <td>
+      <b>
+       <u>
+        English Translation:
+       </u>
+      </b>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <b>
+       <u>
+        S&egrave;ist
+       </u>
+      </b>
+     </td>
+     <td>
+      <b>
+       <u>
+        Chorus
+       </u>
+      </b>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      hi rim horo, horo leatha
+     </td>
+     <td>
+      hi rim horo, horo leatha
+     </td>
+    </tr>
+    <tr>
+     <td>
+      hi rim horo, horo leatha
+     </td>
+     <td>
+      hi rim horo, horo leatha
+     </td>
+    </tr>
+    <tr>
+     <td>
+      hi rim horo, horo leatha
+     </td>
+     <td>
+      hi rim horo, horo leatha
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Chaidh an l&agrave; le chlann d&ograve;mhnaill
+     </td>
+     <td>
+      I went to the battle with Clan Donald
+     </td>
+    </tr>
+    <tr>
+     <td>
+      &nbsp;
+     </td>
+     <td>
+      &nbsp;
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Dh&igrave;rich mi moch mhadainn D&ograve;mhnaich
+     </td>
+     <td>
+      I rose early Sunday morning
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Gu br&agrave;igh caisteil Inbhir Lochaidh
+     </td>
+     <td>
+      To the top of Inverlochy castle;
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Chunnaic mi 'n t-arm dol an &ograve;rdugh
+     </td>
+     <td>
+      I saw the army going in order,
+     </td>
+    </tr>
+    <tr>
+     <td>
+      'S bha buaidh a' bhlair le Chlann D&ograve;mhnaill
+     </td>
+     <td>
+      And the victory of the battle was with the Clan Donald.
+     </td>
+    </tr>
+    <tr>
+     <td>
+      &nbsp;
+     </td>
+     <td>
+      &nbsp;
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Air do l&agrave;imh-sa, Thighearna Labhair
+     </td>
+     <td>
+      On your hand, Lord Lawers,
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Ge mh&ograve;r do bh&ograve;sd as do chlaidheamh
+     </td>
+     <td>
+      How proud you are of your sword,
+     </td>
+    </tr>
+    <tr>
+     <td>
+      'S iomadh &ograve;glach chinne d'athar
+     </td>
+     <td>
+      Many are the servants of your father's tribe In
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Tha 'n Inbhir Lochaidh na laighe
+     </td>
+     <td>
+      Inverlochy lies.
+     </td>
+    </tr>
+    <tr>
+     <td>
+      &nbsp;
+     </td>
+     <td>
+      &nbsp;
+     </td>
+    </tr>
+    <tr>
+     <td>
+      'S iomadh fear aid agus pice
+     </td>
+     <td>
+      There were many men in hat and pitch
+     </td>
+    </tr>
+    <tr>
+     <td>
+      agus cuilbheire  chaoil dh&igrave;rich
+     </td>
+     <td>
+      And a slender, upright musket
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Bha 'n Inbhir Lochaidh na sh&igrave;neadh
+     </td>
+     <td>
+      In Inverlochy lay,
+     </td>
+    </tr>
+    <tr>
+     <td>
+      'S bha luaidh nam ban &agrave; Cinn-tir' ann
+     </td>
+     <td>
+      And there was the wailing of the women of Kintyre.
+     </td>
+    </tr>
+    <tr>
+     <td>
+      &nbsp;
+     </td>
+     <td>
+      &nbsp;
+     </td>
+    </tr>
+    <tr>
+     <td>
+      'S lionmhor corp nochte dun aodach
+     </td>
+     <td>
+      Numerous are the naked bodies without clothing
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Tha na s&igrave;neadh air Chnoc an Fhraoiche
+     </td>
+     <td>
+      That lie on Heather Hill
+     </td>
+    </tr>
+    <tr>
+     <td>
+      On Bhl&agrave;r an greaste an saoidhean
+     </td>
+     <td>
+      From the battlefield of the sages,
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Gu ceann leitir Bl&agrave;r a' Chaorainn
+     </td>
+     <td>
+      To the end of the Letter of the Battle of the Rowan.
+     </td>
+    </tr>
+    <tr>
+     <td>
+      &nbsp;
+     </td>
+     <td>
+      &nbsp;
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Dh'innsinn sgeul eile le firinn
+     </td>
+     <td>
+      I told another story with truth,
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Cho math 's n&igrave; cl&egrave;ireach a sgr&igrave;obadh
+     </td>
+     <td>
+      As well as what a clerk writes,
+     </td>
+    </tr>
+    <tr>
+     <td>
+      chaidh na laoich ud du 'n d&igrave;cheall
+     </td>
+     <td>
+      Those heroes went to great lengths
+     </td>
+    </tr>
+    <tr>
+     <td>
+      'S chuir iad maoim air luchd am mi-r&ugrave;in
+     </td>
+     <td>
+      And they terrified those who hated them.
+     </td>
+    </tr>
+    <tr>
+     <td>
+      &nbsp;
+     </td>
+     <td>
+      &nbsp;
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Sgrios oirbh mas truagh leam bhur c&agrave;ramh
+     </td>
+     <td>
+      Destroy you if I pity your care,
+     </td>
+    </tr>
+    <tr>
+     <td>
+      'G &egrave;isteachd an-shocair bhur p&agrave;istean
+     </td>
+     <td>
+      Listening calmly to your children.
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Caoidh a' phanail bh'anns an &agrave;raich
+     </td>
+     <td>
+      Lament for the panel in the battlefield,
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Donnalaich bh&agrave;n Earra-Gh&agrave;idheal
+     </td>
+     <td>
+      The fair Donnells of Argyll.
+     </td>
+    </tr>
+   </table>
+   <cleaned>
+   </cleaned>
+   <script>
+    document.querySelectorAll("#title").forEach(element => {
+      element.textContent="TEST NAME"
+   });
+   </script>
+  </p>
+ </body>
+</html>

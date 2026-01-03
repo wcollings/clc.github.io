@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-  <title>
+  <title id="tabname">
    @@ARTIST - @@TITLE
   </title>
-  <link href="../../style.css" rel="stylesheet"/>
+  <link href="../style.css" rel="stylesheet"/>
  </head>
  <body>
    <p>
@@ -16,29 +16,28 @@
    Artists
   </a>
   &gt;
-  <a href="../index.html">
-   @@ARTIST
+  <a href="../index.html" id="artist">
+   Artist
   </a>
   &gt;
-  <a href="@@ALB_LINK">
-   @@ALBUM
+  <a href="@@ALB_LINK" id="album">
+   Album
   </a>
   &gt;
-  @@TITLE
+  <u id="title">Track name</u>
   <br/>
   <div align="center">
    <table id="head_t">
     <tr>
      <td id="lc">
-      <img src="@@ALB_LINK.jpg" width="100"/>
+      <img src="@@ALB_LINK.jpg" width="100" id="alb_cover"/>
      </td>
      <td>
-      <h3>
-       @@TITLE
+      <h3 id="title">
       </h3>
      </td>
     </tr>
-    <tr> <td id="lc"> <u> <b> Credits </b> : </u> </td> <td> @@CREDITS </td> </tr>
+    <tr> <td id="lc"> <u> <b> Credits </b> : </u> </td> <td id="credits"> </td> </tr>
     <tr>
      <td id="lc">
       <u>
@@ -48,7 +47,7 @@
        :
       </u>
      </td>
-     <td>
+     <td id="album">
       @@ALBUM
      </td>
     </tr>
@@ -61,7 +60,7 @@
        :
       </u>
      </td>
-     <td>
+     <td id="language">
       @@LANGUAGE
      </td>
     </tr>

@@ -1,0 +1,66 @@
+<html>
+ <!-- Mirrored from www.celticlyricscorner.net/black/babes.htm by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 01 Mar 2021 20:03:34 GMT -->
+ <head>
+  <title>
+   @@ARTIST - @@ALBUM
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <p align="left">
+   <a href="..\clc-frontend\build\index.html">
+    Celtic Lyrics Corner
+   </a>
+   &gt;
+   <a href="..\clc.github.io\artists.html">
+    Artists &amp; Groups
+   </a>
+   &gt;
+   <a href="index.html" id="artist">
+    Artist
+   </a>
+   &gt;
+   <u id="album">
+    you are here
+   </u>
+  </p>
+  <p align="center">
+   <div align="center">
+    <table id="head_t">
+     <tr>
+      <td id="lc">
+       <img alt="@@ALBUM" src="@@ALBLINK.jpg" width="100"/>
+      </td>
+      <td id="name">
+      </td>
+     </tr>
+     <tr>
+      <td id="lc">
+       <b>
+        <u>
+         Tracks
+        </u>
+        :
+       </b>
+      </td>
+     </tr>
+    </table>
+   </div>
+  </p>
+  <cleaned>
+  </cleaned>
+  <script>
+   const params = new URLSearchParams(window.location.search);
+    if (params.has("artist")) {
+        artist=document.querySelector("#artist")
+        artist.textContent=params.get("artist")
+        artist.href="test.html"
+    }
+    if (params.has("album")) {
+        artist=document.querySelector("#album")
+        artist.textContent=params.get("album")
+        artist.href="test.html"
+    }
+  </script>
+ </body>
+</html>

@@ -1,6 +1,6 @@
 import os
 import re
-import beautifulsoup as bs
+from bs4 import BeautifulSoup as bs
 
 def finalize_links(path, album):
 	# read through each file in the folder
@@ -32,8 +32,6 @@ def search_dirs(path, fname):
 	#   append the album folder again
 
 	#testing case 1
-	if not "\\" in fname:
-
 	if fname.startswith("../"):
 		fname=fname[3:]
 	p, dir = os.path.split(path)
@@ -50,10 +48,10 @@ def split_path(path):
 	folders=[]
 	while path:
 		i=path.find(delim)
-		if i is not None:
+		if i > 0:
 			folders.append(path[:i])
-			if path[i+1]==delim:
-				i+=1
+			if path[i]==delim:
+				i+=len(delim)
 			path=path[i:]
 		else:
 			folders.append(path)

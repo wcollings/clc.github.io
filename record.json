@@ -3,11 +3,26 @@
       "image": "photo-altan.jpg",
       "artist": "Altan",
       "members": "Dermot Byrne, Ciar\u00e1n Curran, Mark Kelly, Mair\u00e9ad N\u00ed Mhaonaigh, D\u00e1ith\u00ed Sproule & Ciar\u00e1n Tourish",
+      "album_map":
+      {
+         "Ceol Aduaidh":"ceoladuaidh",
+         "Altan":"altan",
+         "Horse With a Heart":"horseheart",
+         "The Red Crow":"redcrow",
+         "Harvest Storm":"harveststorm",
+         "Island Angel":"islandangel",
+         "Blackwater":"blackwater",
+         "The Best of Altan":"best",
+         "Runaway Sunday":"runaway",
+         "Another Sky":"anothersky",
+         "The Blue Idol":"blueidol",
+         "Local Ground":"localground"
+      },
       "albums": [
          [
             1983,
             "Ceol Aduaidh",
-            "ceoladuaidh/ceoladuaidh.html"
+            "ceoladuaidh/index.html"
          ],
          [
             1987,
@@ -185,127 +200,12 @@
    {
       "image": "photo-bb.jpg",
       "artist": "BattleField Band",
-      "members": "Alan Reid, Brian McNeill, Jim Thomson, Eddie Morgan, Sandra Lang, Ricky Starrs, Jamie McMenemy, John Galahan, \n            Pat Kilbride, Jen Clark, Duncan MacGillivray, Sylvia Barnes, Ged Foley, Dougie Pincock, Alistair Russel, John \n            McCusker, Iain MacDonald, Davy Steele, Karine Polwart, Ewen Henderson, Sean O'Donnell, Alasdair White, & Mike Katz",
+      "members": "Alan Reid, Brian McNeill, Jim Thomson, Eddie Morgan, Sandra Lang, Ricky Starrs, Jamie McMenemy, John Galahan, Pat Kilbride, Jen Clark, Duncan MacGillivray, Sylvia Barnes, Ged Foley, Dougie Pincock, Alistair Russel, John McCusker, Iain MacDonald, Davy Steele, Karine Polwart, Ewen Henderson, Sean O'Donnell, Alasdair White, & Mike Katz",
       "albums": [
-         [
-            1976,
-            "Farewell to Nova Scotia",
-            null
-         ],
-         [
-            1977,
-            "Battlefield Band",
-            null
-         ],
-         [
-            1978,
-            "Wae",
-            null
-         ],
-         [
-            1978,
-            "At the Front",
-            null
-         ],
-         [
-            1979,
-            "Stand Easy",
-            null
-         ],
-         [
-            1980,
-            "Home is Where the Van is",
-            null
-         ],
-         [
-            1982,
-            "There",
-            null
-         ],
-         [
-            1984,
-            "Anthem for the Common Man",
-            null
-         ],
-         [
-            1986,
-            "On the Rise",
-            null
-         ],
-         [
-            1987,
-            "Celtic Hotel",
-            null
-         ],
-         [
-            1991,
-            "New Spring",
-            null
-         ],
-         [
-            1992,
-            "Quiet Days",
-            null
-         ],
-         [
-            1995,
-            "Threads",
-            null
-         ],
-         [
-            1998,
-            "Rain",
-            null
-         ],
-         [
-            1999,
-            "Leaving Friday Harbor",
-            null
-         ],
-         [
-            2001,
-            "Happy Daze",
-            null
-         ],
-         [
-            2002,
-            "Time and Tide",
-            null
-         ],
-         [
-            2004,
-            "Out for the Night",
-            null
-         ],
-         [
-            2006,
-            "The Road of Tears",
-            null
-         ],
-         [
-            2007,
-            "Dookin",
-            null
-         ],
-         [
-            2009,
-            "Zama Zama",
-            null
-         ],
          [
             2011,
             "Line",
             "lineup/lineup.html"
-         ],
-         [
-            2013,
-            "Room Enough For All",
-            null
-         ],
-         [
-            2015,
-            "Beg and Borrow",
-            null
          ]
       ],
       "folder": ".\\battlefield"

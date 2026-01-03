@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-  <title>
+  <title id="tabname">
    Griogair Labhruidh - Dail-Riada
   </title>
-  <link href="../../style.css" rel="stylesheet"/>
+  <link href="../style.css" rel="stylesheet"/>
  </head>
  <body>
   <p>
@@ -16,26 +16,39 @@
     Artists
    </a>
    &gt;
-   <a href="../index.html">
-    Griogair Labhruidh
+   <a href="../index.html" id="artist">
+    Artist
    </a>
    &gt;
-   <a href="dail">
-    Dail-Riada
+   <a href="dail" id="album">
+    Album
    </a>
    &gt;
-  Dail-Riada
+   <u id="title">
+    Track name
+   </u>
    <br/>
    <div align="center">
     <table id="head_t">
      <tr>
       <td id="lc">
-       <img src="dail.jpg" width="100"/>
+       <img id="alb_cover" src="dail.jpg" width="100"/>
       </td>
       <td>
-       <h3>
-        Dail-Riada
+       <h3 id="title">
        </h3>
+      </td>
+     </tr>
+     <tr>
+      <td id="lc">
+       <u>
+        <b>
+         Credits
+        </b>
+        :
+       </u>
+      </td>
+      <td id="credits">
       </td>
      </tr>
      <tr>
@@ -47,7 +60,7 @@
         :
        </u>
       </td>
-      <td>
+      <td id="album">
        Dail-Riada
       </td>
      </tr>
@@ -60,7 +73,7 @@
         :
        </u>
       </td>
-      <td>
+      <td id="language">
        G&agrave;idhlig
       </td>
      </tr>
@@ -406,6 +419,11 @@
    </table>
    <cleaned>
    </cleaned>
+   <script>
+    document.querySelectorAll("#title").forEach(element => {
+      element.textContent="TEST NAME"
+   });
+   </script>
   </p>
  </body>
 </html>

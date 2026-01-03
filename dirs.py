@@ -84,4 +84,4 @@ def get_dir_struct(songs_only=False):
 	print(ds)
 
 #get_dir_struct()
-print(get_folders())
+# print(get_folders())

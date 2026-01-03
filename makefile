@@ -1,0 +1,2 @@
+songs:
+	python3 add_song.py

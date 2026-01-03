@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-  <title>
+  <title id="tabname">
    Julie Fowlis - An R&ograve;n/Ann An Caolas od Odram
   </title>
-  <link href="../../style.css" rel="stylesheet"/>
+  <link href="../style.css" rel="stylesheet"/>
  </head>
  <body>
   <p>
@@ -16,26 +16,39 @@
     Artists
    </a>
    &gt;
-   <a href="../index.html">
-    Julie Fowlis
+   <a href="../index.html" id="artist">
+    Artist
    </a>
    &gt;
-   <a href="sgeul">
-    Gach Sgeul
+   <a href="sgeul" id="album">
+    Album
    </a>
    &gt;
-  An R&ograve;n/Ann An Caolas od Odram
+   <u id="title">
+    Track name
+   </u>
    <br/>
    <div align="center">
     <table id="head_t">
      <tr>
       <td id="lc">
-       <img src="sgeul.jpg" width="100"/>
+       <img id="alb_cover" src="sgeul.jpg" width="100"/>
       </td>
       <td>
-       <h3>
-        An R&ograve;n/Ann An Caolas od Odram
+       <h3 id="title">
        </h3>
+      </td>
+     </tr>
+     <tr>
+      <td id="lc">
+       <u>
+        <b>
+         Credits
+        </b>
+        :
+       </u>
+      </td>
+      <td id="credits">
       </td>
      </tr>
      <tr>
@@ -47,7 +60,7 @@
         :
        </u>
       </td>
-      <td>
+      <td id="album">
        Gach Sgeul
       </td>
      </tr>
@@ -60,7 +73,7 @@
         :
        </u>
       </td>
-      <td>
+      <td id="language">
        G&agrave;idhlig
       </td>
      </tr>
@@ -510,6 +523,11 @@
    </table>
    <cleaned>
    </cleaned>
+   <script>
+    document.querySelectorAll("#title").forEach(element => {
+      element.textContent="TEST NAME"
+   });
+   </script>
   </p>
  </body>
 </html>
